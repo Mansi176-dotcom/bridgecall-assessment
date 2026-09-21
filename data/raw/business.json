@@ -1,0 +1,205 @@
+[
+  {
+    "record_id": "ph-product",
+    "market": "PH",
+    "category": "product",
+    "title": "Family protection",
+    "keywords": "coverage life insurance product benefits protection",
+    "answers": {
+      "en-PH": "The fictional Harbor Life plan provides life cover. Benefits and exclusions depend on the issued policy; this demo does not quote a coverage amount.",
+      "fil-PH": "Ang demo Harbor Life ay life insurance. Nasa issued policy ang benefits at exclusions; wala akong verified coverage amount dito."
+    },
+    "effective_date": "2026-09-21",
+    "version": "1.0",
+    "authority": "fictional-approved-demo"
+  },
+  {
+    "record_id": "ph-qualification",
+    "market": "PH",
+    "category": "qualification",
+    "title": "Initial qualification",
+    "keywords": "eligible eligibility qualify qualification age resident screening",
+    "answers": {
+      "en-PH": "For this fictional demo, initial screening requires age 18–60, Philippine residency, and permission for an adviser callback. Screening is not approval or a quotation.",
+      "fil-PH": "Sa demo na ito, paunang screening lang: edad 18–60, residente ng Pilipinas, at pahintulot para sa adviser callback. Hindi ito approval o quotation."
+    },
+    "effective_date": "2026-09-21",
+    "version": "1.0",
+    "authority": "fictional-approved-demo"
+  },
+  {
+    "record_id": "ph-premium",
+    "market": "PH",
+    "category": "faq",
+    "title": "Premium and payment",
+    "keywords": "premium payment monthly cost presyo bayad magkano",
+    "answers": {
+      "en-PH": "A premium is the amount paid to keep a policy in force, subject to its terms. This demo has no verified premium schedule. An adviser must confirm a quote; do not send money through this demo.",
+      "fil-PH": "Ang premium ang bayad para manatiling active ang policy, ayon sa terms nito. Wala tayong verified premium schedule. Adviser ang magkukumpirma ng quote; huwag magpadala ng pera sa demo."
+    },
+    "effective_date": "2026-09-21",
+    "version": "1.0",
+    "authority": "fictional-approved-demo"
+  },
+  {
+    "record_id": "ph-lapse",
+    "market": "PH",
+    "category": "policy",
+    "title": "Missed premium",
+    "keywords": "lapse grace missed late premium renewal renew",
+    "answers": {
+      "en-PH": "Missing a premium may affect coverage. The actual policy determines any grace period or lapse. No grace-period length is approved in this demo; request adviser assistance.",
+      "fil-PH": "Kapag na-miss ang premium, maaaring maapektuhan ang coverage. Depende sa policy ang grace period at lapse. Walang approved na bilang ng araw sa demo; adviser po ang magkukumpirma."
+    },
+    "effective_date": "2026-09-21",
+    "version": "1.0",
+    "authority": "fictional-approved-demo"
+  },
+  {
+    "record_id": "ph-budget",
+    "market": "PH",
+    "category": "objection",
+    "title": "Budget concern",
+    "keywords": "expensive afford budget mahal costly gastos",
+    "answers": {
+      "en-PH": "If the premium feels expensive, offer an adviser callback to discuss the customer’s budget. Do not invent a discount, reduce cover without consent, or promise acceptance.",
+      "fil-PH": "Kung mabigat sa budget ang premium, puwedeng magpa-callback sa adviser para mapag-usapan ang budget. Walang ipinapangakong discount o approval."
+    },
+    "effective_date": "2026-09-21",
+    "version": "1.0",
+    "authority": "fictional-approved-demo"
+  },
+  {
+    "record_id": "ph-beneficiary",
+    "market": "PH",
+    "category": "faq",
+    "title": "Beneficiary and rider",
+    "keywords": "beneficiary rider dependents anak family add on",
+    "answers": {
+      "en-PH": "A beneficiary is the person designated to receive a covered benefit, subject to policy terms. A rider is an optional additional benefit; availability and cost require adviser confirmation.",
+      "fil-PH": "Ang beneficiary ang itinalagang tatanggap ng covered benefit, ayon sa policy. Ang rider ay optional na dagdag na benefit; ipa-confirm sa adviser ang availability at cost."
+    },
+    "effective_date": "2026-09-21",
+    "version": "1.0",
+    "authority": "fictional-approved-demo"
+  },
+  {
+    "record_id": "ph-referral",
+    "market": "PH",
+    "category": "policy",
+    "title": "Bank referral",
+    "keywords": "bank referral bancassurance deposit guaranteed investment returns",
+    "answers": {
+      "en-PH": "A bank referral connects the customer to an insurance adviser. This fictional product is insurance, not a bank deposit. Do not promise guaranteed investment returns.",
+      "fil-PH": "Ang bank referral ay pagpapakilala sa insurance adviser. Insurance ito, hindi bank deposit. Hindi kami nangangako ng guaranteed investment returns."
+    },
+    "effective_date": "2026-09-21",
+    "version": "1.0",
+    "authority": "fictional-approved-demo"
+  },
+  {
+    "record_id": "ph-callback",
+    "market": "PH",
+    "category": "action",
+    "title": "Adviser callback",
+    "keywords": "callback adviser human tao agent assistance",
+    "answers": {
+      "en-PH": "A callback request in this demo creates a local mock CRM record only. No adviser is actually contacted. Confirm the preferred time and consent before recording a request.",
+      "fil-PH": "Local mock CRM record lang ang callback request sa demo. Wala pang totoong adviser na makokontak. Kailangan muna ang pahintulot at preferred na oras."
+    },
+    "effective_date": "2026-09-21",
+    "version": "1.0",
+    "authority": "fictional-approved-demo"
+  },
+  {
+    "record_id": "id-product",
+    "market": "ID",
+    "category": "product",
+    "title": "Consumer financing",
+    "keywords": "pembiayaan product finance consumer motor vehicle",
+    "answers": {
+      "id-ID": "Demo Nusantara Finance adalah simulasi pembiayaan konsumen. Persetujuan, nilai pembiayaan, dan syarat harus diverifikasi petugas; ini bukan penawaran kredit."
+    },
+    "effective_date": "2026-09-21",
+    "version": "1.0",
+    "authority": "fictional-approved-demo"
+  },
+  {
+    "record_id": "id-payment",
+    "market": "ID",
+    "category": "faq",
+    "title": "Installment and due date",
+    "keywords": "cicilan angsuran jatuh tempo payment bayar installment tanggal",
+    "answers": {
+      "id-ID": "Cicilan atau angsuran dibayar sesuai jadwal dalam kontrak. Tanggal jatuh tempo dan jumlah tagihan belum tersedia di demo ini. Cek kanal resmi pada kontrak atau minta bantuan petugas; jangan transfer lewat demo."
+    },
+    "effective_date": "2026-09-21",
+    "version": "1.0",
+    "authority": "fictional-approved-demo"
+  },
+  {
+    "record_id": "id-penalty",
+    "market": "ID",
+    "category": "policy",
+    "title": "Late payment charges",
+    "keywords": "denda late penalty terlambat telat biaya",
+    "answers": {
+      "id-ID": "Denda mengikuti kontrak pembiayaan yang berlaku. Demo ini tidak memiliki tarif denda terverifikasi. Saya bisa mencatat permintaan bantuan petugas, tanpa menjanjikan penghapusan denda."
+    },
+    "effective_date": "2026-09-21",
+    "version": "1.0",
+    "authority": "fictional-approved-demo"
+  },
+  {
+    "record_id": "id-budget",
+    "market": "ID",
+    "category": "objection",
+    "title": "Payment difficulty",
+    "keywords": "susah belum gajian sulit afford difficulty nggak bisa bayar gak bisa bayar berat",
+    "answers": {
+      "id-ID": "Saya paham, Bapak/Ibu sedang kesulitan membayar. Saya bisa mencatat permintaan untuk membahas pilihan bantuan dengan petugas. Tidak ada janji penundaan, restrukturisasi, atau penghapusan denda."
+    },
+    "effective_date": "2026-09-21",
+    "version": "1.0",
+    "authority": "fictional-approved-demo"
+  },
+  {
+    "record_id": "id-tenor",
+    "market": "ID",
+    "category": "faq",
+    "title": "Tenor and down payment",
+    "keywords": "tenor dp down payment uang muka term",
+    "answers": {
+      "id-ID": "Tenor adalah jangka waktu pembiayaan, sedangkan DP adalah uang muka. Besaran DP dan pilihan tenor harus diperiksa dalam penawaran resmi; demo ini tidak menetapkan angka."
+    },
+    "effective_date": "2026-09-21",
+    "version": "1.0",
+    "authority": "fictional-approved-demo"
+  },
+  {
+    "record_id": "id-callback",
+    "market": "ID",
+    "category": "action",
+    "title": "Officer callback",
+    "keywords": "callback petugas manusia hubungi bantuan telepon",
+    "answers": {
+      "id-ID": "Permintaan callback hanya disimpan sebagai catatan CRM lokal untuk demo. Belum ada petugas yang dihubungi. Mohon konfirmasi persetujuan dan waktu yang diinginkan."
+    },
+    "effective_date": "2026-09-21",
+    "version": "1.0",
+    "authority": "fictional-approved-demo"
+  },
+  {
+    "record_id": "id-qualification",
+    "market": "ID",
+    "category": "qualification",
+    "title": "Initial screening",
+    "keywords": "eligible eligibility qualification usia umur domisili",
+    "answers": {
+      "id-ID": "Demo ini hanya mengumpulkan minat dan persetujuan callback. Kelayakan pembiayaan harus diperiksa petugas berdasarkan dokumen dan kebijakan resmi; jangan kirim NIK atau nomor rekening."
+    },
+    "effective_date": "2026-09-21",
+    "version": "1.0",
+    "authority": "fictional-approved-demo"
+  }
+]

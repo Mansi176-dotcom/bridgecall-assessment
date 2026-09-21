@@ -1,0 +1,381 @@
+[
+  {
+    "question": "What coverage does the life insurance product provide?",
+    "market": "PH",
+    "language": "en-PH",
+    "expected": "ph-product",
+    "retrieved": [
+      {
+        "record_id": "ph-product-en-PH",
+        "source": "data/raw/business.json#/0/answers/en-PH",
+        "content": "The fictional Harbor Life plan provides life cover. Benefits and exclusions depend on the issued policy; this demo does not quote a coverage amount.",
+        "score": 7.3597,
+        "matched": [
+          "coverage",
+          "insurance",
+          "life",
+          "product"
+        ]
+      },
+      {
+        "record_id": "ph-referral-en-PH",
+        "source": "data/raw/business.json#/6/answers/en-PH",
+        "content": "A bank referral connects the customer to an insurance adviser. This fictional product is insurance, not a bank deposit. Do not promise guaranteed investment returns.",
+        "score": 3.1474,
+        "matched": [
+          "insurance",
+          "product"
+        ]
+      },
+      {
+        "record_id": "ph-lapse-en-PH",
+        "source": "data/raw/business.json#/3/answers/en-PH",
+        "content": "Missing a premium may affect coverage. The actual policy determines any grace period or lapse. No grace-period length is approved in this demo; request adviser assistance.",
+        "score": 1.2435,
+        "matched": [
+          "coverage"
+        ]
+      }
+    ],
+    "selected": "ph-product-en-PH",
+    "verdict": "correct",
+    "relevance_explanation": "Expected topic: ph-product; lexical matches recorded above."
+  },
+  {
+    "question": "Who is eligible based on age?",
+    "market": "PH",
+    "language": "en-PH",
+    "expected": "ph-qualification",
+    "retrieved": [
+      {
+        "record_id": "ph-qualification-en-PH",
+        "source": "data/raw/business.json#/1/answers/en-PH",
+        "content": "For this fictional demo, initial screening requires age 18–60, Philippine residency, and permission for an adviser callback. Screening is not approval or a quotation.",
+        "score": 4.2991,
+        "matched": [
+          "age",
+          "eligible"
+        ]
+      }
+    ],
+    "selected": "ph-qualification-en-PH",
+    "verdict": "correct",
+    "relevance_explanation": "Expected topic: ph-qualification; lexical matches recorded above."
+  },
+  {
+    "question": "What happens if my policy lapses after a missed premium?",
+    "market": "PH",
+    "language": "en-PH",
+    "expected": "ph-lapse",
+    "retrieved": [
+      {
+        "record_id": "ph-lapse-en-PH",
+        "source": "data/raw/business.json#/3/answers/en-PH",
+        "content": "Missing a premium may affect coverage. The actual policy determines any grace period or lapse. No grace-period length is approved in this demo; request adviser assistance.",
+        "score": 4.5477,
+        "matched": [
+          "missed",
+          "policy",
+          "premium"
+        ]
+      },
+      {
+        "record_id": "ph-budget-en-PH",
+        "source": "data/raw/business.json#/4/answers/en-PH",
+        "content": "If the premium feels expensive, offer an adviser callback to discuss the customer’s budget. Do not invent a discount, reduce cover without consent, or promise acceptance.",
+        "score": 2.7314,
+        "matched": [
+          "if",
+          "premium"
+        ]
+      },
+      {
+        "record_id": "ph-premium-en-PH",
+        "source": "data/raw/business.json#/2/answers/en-PH",
+        "content": "A premium is the amount paid to keep a policy in force, subject to its terms. This demo has no verified premium schedule. An adviser must confirm a quote; do not send money through this demo.",
+        "score": 2.1969,
+        "matched": [
+          "policy",
+          "premium"
+        ]
+      }
+    ],
+    "selected": "ph-lapse-en-PH",
+    "verdict": "correct",
+    "relevance_explanation": "Expected topic: ph-lapse; lexical matches recorded above."
+  },
+  {
+    "question": "What is a beneficiary?",
+    "market": "PH",
+    "language": "en-PH",
+    "expected": "ph-beneficiary",
+    "retrieved": [
+      {
+        "record_id": "ph-beneficiary-en-PH",
+        "source": "data/raw/business.json#/5/answers/en-PH",
+        "content": "A beneficiary is the person designated to receive a covered benefit, subject to policy terms. A rider is an optional additional benefit; availability and cost require adviser confirmation.",
+        "score": 2.834,
+        "matched": [
+          "beneficiary"
+        ]
+      }
+    ],
+    "selected": "ph-beneficiary-en-PH",
+    "verdict": "correct",
+    "relevance_explanation": "Expected topic: ph-beneficiary; lexical matches recorded above."
+  },
+  {
+    "question": "This is expensive and outside my budget",
+    "market": "PH",
+    "language": "en-PH",
+    "expected": "ph-budget",
+    "retrieved": [
+      {
+        "record_id": "ph-budget-en-PH",
+        "source": "data/raw/business.json#/4/answers/en-PH",
+        "content": "If the premium feels expensive, offer an adviser callback to discuss the customer’s budget. Do not invent a discount, reduce cover without consent, or promise acceptance.",
+        "score": 5.2737,
+        "matched": [
+          "budget",
+          "expensive"
+        ]
+      },
+      {
+        "record_id": "ph-beneficiary-en-PH",
+        "source": "data/raw/business.json#/5/answers/en-PH",
+        "content": "A beneficiary is the person designated to receive a covered benefit, subject to policy terms. A rider is an optional additional benefit; availability and cost require adviser confirmation.",
+        "score": 0.683,
+        "matched": [
+          "and"
+        ]
+      },
+      {
+        "record_id": "ph-product-en-PH",
+        "source": "data/raw/business.json#/0/answers/en-PH",
+        "content": "The fictional Harbor Life plan provides life cover. Benefits and exclusions depend on the issued policy; this demo does not quote a coverage amount.",
+        "score": 0.5134,
+        "matched": [
+          "and"
+        ]
+      }
+    ],
+    "selected": "ph-budget-en-PH",
+    "verdict": "correct",
+    "relevance_explanation": "Expected topic: ph-budget; lexical matches recorded above."
+  },
+  {
+    "question": "Mahal ang premium, may budget option ba?",
+    "market": "PH",
+    "language": "fil-PH",
+    "expected": "ph-budget",
+    "retrieved": [
+      {
+        "record_id": "ph-budget-fil-PH",
+        "source": "data/raw/business.json#/4/answers/fil-PH",
+        "content": "Kung mabigat sa budget ang premium, puwedeng magpa-callback sa adviser para mapag-usapan ang budget. Walang ipinapangakong discount o approval.",
+        "score": 5.9652,
+        "matched": [
+          "budget",
+          "mahal",
+          "premium"
+        ]
+      },
+      {
+        "record_id": "ph-premium-fil-PH",
+        "source": "data/raw/business.json#/2/answers/fil-PH",
+        "content": "Ang premium ang bayad para manatiling active ang policy, ayon sa terms nito. Wala tayong verified premium schedule. Adviser ang magkukumpirma ng quote; huwag magpadala ng pera sa demo.",
+        "score": 1.5718,
+        "matched": [
+          "premium"
+        ]
+      },
+      {
+        "record_id": "ph-lapse-fil-PH",
+        "source": "data/raw/business.json#/3/answers/fil-PH",
+        "content": "Kapag na-miss ang premium, maaaring maapektuhan ang coverage. Depende sa policy ang grace period at lapse. Walang approved na bilang ng araw sa demo; adviser po ang magkukumpirma.",
+        "score": 1.4647,
+        "matched": [
+          "premium"
+        ]
+      }
+    ],
+    "selected": "ph-budget-fil-PH",
+    "verdict": "correct",
+    "relevance_explanation": "Expected topic: ph-budget; lexical matches recorded above."
+  },
+  {
+    "question": "Ano ang bank referral?",
+    "market": "PH",
+    "language": "fil-PH",
+    "expected": "ph-referral",
+    "retrieved": [
+      {
+        "record_id": "ph-referral-fil-PH",
+        "source": "data/raw/business.json#/6/answers/fil-PH",
+        "content": "Ang bank referral ay pagpapakilala sa insurance adviser. Insurance ito, hindi bank deposit. Hindi kami nangangako ng guaranteed investment returns.",
+        "score": 5.9391,
+        "matched": [
+          "bank",
+          "referral"
+        ]
+      }
+    ],
+    "selected": "ph-referral-fil-PH",
+    "verdict": "correct",
+    "relevance_explanation": "Expected topic: ph-referral; lexical matches recorded above."
+  },
+  {
+    "question": "Kapan cicilan jatuh tempo?",
+    "market": "ID",
+    "language": "id-ID",
+    "expected": "id-payment",
+    "retrieved": [
+      {
+        "record_id": "id-payment-id-ID",
+        "source": "data/raw/business.json#/9/answers/id-ID",
+        "content": "Cicilan atau angsuran dibayar sesuai jadwal dalam kontrak. Tanggal jatuh tempo dan jumlah tagihan belum tersedia di demo ini. Cek kanal resmi pada kontrak atau minta bantuan petugas; jangan transfer lewat demo.",
+        "score": 6.3279,
+        "matched": [
+          "cicilan",
+          "jatuh",
+          "tempo"
+        ]
+      }
+    ],
+    "selected": "id-payment-id-ID",
+    "verdict": "correct",
+    "relevance_explanation": "Expected topic: id-payment; lexical matches recorded above."
+  },
+  {
+    "question": "Berapa denda kalau telat?",
+    "market": "ID",
+    "language": "id-ID",
+    "expected": "id-penalty",
+    "retrieved": [
+      {
+        "record_id": "id-penalty-id-ID",
+        "source": "data/raw/business.json#/10/answers/id-ID",
+        "content": "Denda mengikuti kontrak pembiayaan yang berlaku. Demo ini tidak memiliki tarif denda terverifikasi. Saya bisa mencatat permintaan bantuan petugas, tanpa menjanjikan penghapusan denda.",
+        "score": 3.7327,
+        "matched": [
+          "denda",
+          "telat"
+        ]
+      },
+      {
+        "record_id": "id-budget-id-ID",
+        "source": "data/raw/business.json#/11/answers/id-ID",
+        "content": "Saya paham, Bapak/Ibu sedang kesulitan membayar. Saya bisa mencatat permintaan untuk membahas pilihan bantuan dengan petugas. Tidak ada janji penundaan, restrukturisasi, atau penghapusan denda.",
+        "score": 1.0889,
+        "matched": [
+          "denda"
+        ]
+      }
+    ],
+    "selected": "id-penalty-id-ID",
+    "verdict": "correct",
+    "relevance_explanation": "Expected topic: id-penalty; lexical matches recorded above."
+  },
+  {
+    "question": "Saya belum gajian, susah bayar",
+    "market": "ID",
+    "language": "id-ID",
+    "expected": "id-budget",
+    "retrieved": [
+      {
+        "record_id": "id-budget-id-ID",
+        "source": "data/raw/business.json#/11/answers/id-ID",
+        "content": "Saya paham, Bapak/Ibu sedang kesulitan membayar. Saya bisa mencatat permintaan untuk membahas pilihan bantuan dengan petugas. Tidak ada janji penundaan, restrukturisasi, atau penghapusan denda.",
+        "score": 5.4359,
+        "matched": [
+          "bayar",
+          "belum",
+          "gajian",
+          "susah"
+        ]
+      },
+      {
+        "record_id": "id-payment-id-ID",
+        "source": "data/raw/business.json#/9/answers/id-ID",
+        "content": "Cicilan atau angsuran dibayar sesuai jadwal dalam kontrak. Tanggal jatuh tempo dan jumlah tagihan belum tersedia di demo ini. Cek kanal resmi pada kontrak atau minta bantuan petugas; jangan transfer lewat demo.",
+        "score": 1.7567,
+        "matched": [
+          "bayar",
+          "belum"
+        ]
+      },
+      {
+        "record_id": "id-callback-id-ID",
+        "source": "data/raw/business.json#/13/answers/id-ID",
+        "content": "Permintaan callback hanya disimpan sebagai catatan CRM lokal untuk demo. Belum ada petugas yang dihubungi. Mohon konfirmasi persetujuan dan waktu yang diinginkan.",
+        "score": 0.8925,
+        "matched": [
+          "belum"
+        ]
+      }
+    ],
+    "selected": "id-budget-id-ID",
+    "verdict": "correct",
+    "relevance_explanation": "Expected topic: id-budget; lexical matches recorded above."
+  },
+  {
+    "question": "Jelaskan tenor dan DP",
+    "market": "ID",
+    "language": "id-ID",
+    "expected": "id-tenor",
+    "retrieved": [
+      {
+        "record_id": "id-tenor-id-ID",
+        "source": "data/raw/business.json#/12/answers/id-ID",
+        "content": "Tenor adalah jangka waktu pembiayaan, sedangkan DP adalah uang muka. Besaran DP dan pilihan tenor harus diperiksa dalam penawaran resmi; demo ini tidak menetapkan angka.",
+        "score": 5.3885,
+        "matched": [
+          "dp",
+          "tenor"
+        ]
+      }
+    ],
+    "selected": "id-tenor-id-ID",
+    "verdict": "correct",
+    "relevance_explanation": "Expected topic: id-tenor; lexical matches recorded above."
+  },
+  {
+    "question": "Does coverage include cancer surgery?",
+    "market": "PH",
+    "language": "en-PH",
+    "expected": null,
+    "retrieved": [
+      {
+        "record_id": "ph-product-en-PH",
+        "source": "data/raw/business.json#/0/answers/en-PH",
+        "content": "The fictional Harbor Life plan provides life cover. Benefits and exclusions depend on the issued policy; this demo does not quote a coverage amount.",
+        "score": 1.812,
+        "matched": [
+          "coverage"
+        ]
+      },
+      {
+        "record_id": "ph-lapse-en-PH",
+        "source": "data/raw/business.json#/3/answers/en-PH",
+        "content": "Missing a premium may affect coverage. The actual policy determines any grace period or lapse. No grace-period length is approved in this demo; request adviser assistance.",
+        "score": 1.2435,
+        "matched": [
+          "coverage"
+        ]
+      }
+    ],
+    "selected": null,
+    "verdict": "correct",
+    "relevance_explanation": "Expected abstention on unsupported content"
+  },
+  {
+    "question": "What is the weather in Manila?",
+    "market": "PH",
+    "language": "en-PH",
+    "expected": null,
+    "retrieved": [],
+    "selected": null,
+    "verdict": "correct",
+    "relevance_explanation": "Expected abstention on unsupported content"
+  }
+]

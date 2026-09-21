@@ -1,0 +1,61 @@
+[
+  {
+    "source": "broken.json",
+    "status": "extraction_failed",
+    "error": "JSONDecodeError"
+  },
+  {
+    "source": "duplicate.txt",
+    "section": 0,
+    "status": "duplicate",
+    "pii_redacted": false
+  },
+  {
+    "source": "form.csv",
+    "section": 0,
+    "status": "review_required",
+    "pii_redacted": false
+  },
+  {
+    "source": "form.csv",
+    "section": 1,
+    "status": "review_required",
+    "pii_redacted": false
+  },
+  {
+    "source": "form.csv",
+    "section": 2,
+    "status": "review_required",
+    "pii_redacted": false
+  },
+  {
+    "source": "form.csv",
+    "section": 3,
+    "status": "review_required",
+    "pii_redacted": false
+  },
+  {
+    "source": "unapproved.txt",
+    "section": 0,
+    "status": "quarantined",
+    "pii_redacted": false
+  },
+  {
+    "source": "website.html",
+    "section": 0,
+    "status": "review_required",
+    "pii_redacted": false
+  },
+  {
+    "source": "website.html",
+    "section": 1,
+    "status": "duplicate",
+    "pii_redacted": false
+  },
+  {
+    "source": "website.html",
+    "section": 2,
+    "status": "review_required",
+    "pii_redacted": true
+  }
+]

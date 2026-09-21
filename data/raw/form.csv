@@ -1,0 +1,5 @@
+field,required,purpose
+age,yes,Initial screening; 18–60 for fictional PH flow
+resident,yes,Philippine residency for fictional PH flow
+callback_consent,yes,Record only after explicit confirmation
+callback_time,yes,Customer confirmed local time

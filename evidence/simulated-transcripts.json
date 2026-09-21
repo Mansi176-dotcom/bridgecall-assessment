@@ -1,0 +1,517 @@
+{
+  "Q1-01-cooperative": {
+    "evidence_type": "scripted_text_simulation_not_a_recorded_call",
+    "market": "PH",
+    "language": "en-PH",
+    "turns": [
+      {
+        "customer": "",
+        "assistant": "Hello, I’m the Bridgecall automated demo assistant for fictional Harbor Life. This is a simulation, not insurance advice or an offer. May I ask a few screening questions? Please say yes or no.",
+        "state": "permission",
+        "citation": null,
+        "action": null
+      },
+      {
+        "customer": "yes",
+        "assistant": "What is your age in years? Please use digits when typing.",
+        "state": "age",
+        "citation": null,
+        "action": null
+      },
+      {
+        "customer": "28",
+        "assistant": "Do you currently live in the Philippines? Please say yes or no.",
+        "state": "resident",
+        "citation": null,
+        "action": null
+      },
+      {
+        "customer": "yes",
+        "assistant": "May I create a mock adviser callback request? Please say yes or no. No adviser is contacted by this demo.",
+        "state": "consent",
+        "citation": null,
+        "action": null
+      },
+      {
+        "customer": "What is a beneficiary?",
+        "assistant": "A beneficiary is the person designated to receive a covered benefit, subject to policy terms. A rider is an optional additional benefit; availability and cost require adviser confirmation. May I create a mock adviser callback request? Please say yes or no. No adviser is contacted by this demo.",
+        "state": "consent",
+        "citation": {
+          "record_id": "ph-beneficiary-en-PH",
+          "source": "data/raw/business.json#/5/answers/en-PH",
+          "version": "1.0",
+          "content_sha256": "6ac9a66a8ce618ee649ff81c077cdf84770d2e380df939dddc87e9fa67b532b4",
+          "score": 2.834
+        },
+        "action": null
+      },
+      {
+        "customer": "yes",
+        "assistant": "What local date and time would you prefer for the callback? Include a date and time, for example 25 September at 3 pm.",
+        "state": "time",
+        "citation": null,
+        "action": null
+      },
+      {
+        "customer": "25 September at 3 pm",
+        "assistant": "Please confirm: 25 September at 3 pm, local time. Create this mock callback request? Say yes or no.",
+        "state": "confirm",
+        "citation": null,
+        "action": null
+      },
+      {
+        "customer": "yes",
+        "assistant": "Your mock callback request is saved locally. No real appointment is booked and no adviser has been contacted.",
+        "state": "done",
+        "citation": null,
+        "action": {
+          "id": "a219c150-1bbc-46b3-bc0d-7090cec61c0e",
+          "type": "mock_callback",
+          "market": "PH",
+          "language": "en-PH",
+          "slots": {
+            "age": 28,
+            "resident": true,
+            "callback_consent": true,
+            "callback_time": "25 September at 3 pm"
+          },
+          "status": "local_only"
+        }
+      }
+    ]
+  },
+  "Q1-02-objection": {
+    "evidence_type": "scripted_text_simulation_not_a_recorded_call",
+    "market": "PH",
+    "language": "en-PH",
+    "turns": [
+      {
+        "customer": "",
+        "assistant": "Hello, I’m the Bridgecall automated demo assistant for fictional Harbor Life. This is a simulation, not insurance advice or an offer. May I ask a few screening questions? Please say yes or no.",
+        "state": "permission",
+        "citation": null,
+        "action": null
+      },
+      {
+        "customer": "yes",
+        "assistant": "What is your age in years? Please use digits when typing.",
+        "state": "age",
+        "citation": null,
+        "action": null
+      },
+      {
+        "customer": "The premium is expensive",
+        "assistant": "If the premium feels expensive, offer an adviser callback to discuss the customer’s budget. Do not invent a discount, reduce cover without consent, or promise acceptance. What is your age in years? Please use digits when typing.",
+        "state": "age",
+        "citation": {
+          "record_id": "ph-budget-en-PH",
+          "source": "data/raw/business.json#/4/answers/en-PH",
+          "version": "1.0",
+          "content_sha256": "fae59bef0d7f8c12f4bf1b4d6379f16e18485057db98d962d5ca2c6a39237fd0",
+          "score": 3.4035
+        },
+        "action": null
+      },
+      {
+        "customer": "Does coverage include cancer surgery?",
+        "assistant": "I don’t have verified information for that question. I can record a mock request for adviser assistance.",
+        "state": "age",
+        "citation": null,
+        "action": null
+      },
+      {
+        "customer": "I want a human",
+        "assistant": "I can record a mock request for a human adviser. This demo cannot connect you to a real person. May I record the request? Say yes or no.",
+        "state": "consent",
+        "citation": null,
+        "action": null
+      },
+      {
+        "customer": "yes",
+        "assistant": "What local date and time would you prefer for the callback? Include a date and time, for example 25 September at 3 pm.",
+        "state": "time",
+        "citation": null,
+        "action": null
+      },
+      {
+        "customer": "25 September at 4 pm",
+        "assistant": "Please confirm: 25 September at 4 pm, local time. Create this mock callback request? Say yes or no.",
+        "state": "confirm",
+        "citation": null,
+        "action": null
+      },
+      {
+        "customer": "yes",
+        "assistant": "Your mock callback request is saved locally. No real appointment is booked and no adviser has been contacted.",
+        "state": "done",
+        "citation": null,
+        "action": {
+          "id": "9cce9e01-2db7-412e-b850-7d8fcc9c990c",
+          "type": "mock_callback",
+          "market": "PH",
+          "language": "en-PH",
+          "slots": {
+            "reason": "human_request",
+            "callback_consent": true,
+            "callback_time": "25 September at 4 pm"
+          },
+          "status": "local_only"
+        }
+      }
+    ]
+  },
+  "Q1-03-conflict": {
+    "evidence_type": "scripted_text_simulation_not_a_recorded_call",
+    "market": "PH",
+    "language": "en-PH",
+    "turns": [
+      {
+        "customer": "",
+        "assistant": "Hello, I’m the Bridgecall automated demo assistant for fictional Harbor Life. This is a simulation, not insurance advice or an offer. May I ask a few screening questions? Please say yes or no.",
+        "state": "permission",
+        "citation": null,
+        "action": null
+      },
+      {
+        "customer": "yes",
+        "assistant": "What is your age in years? Please use digits when typing.",
+        "state": "age",
+        "citation": null,
+        "action": null
+      },
+      {
+        "customer": "22 or 32",
+        "assistant": "I heard conflicting or invalid details. Please give one age in years so I can confirm it.",
+        "state": "age",
+        "citation": null,
+        "action": null
+      },
+      {
+        "customer": "32",
+        "assistant": "Do you currently live in the Philippines? Please say yes or no.",
+        "state": "resident",
+        "citation": null,
+        "action": null
+      },
+      {
+        "customer": "yes",
+        "assistant": "May I create a mock adviser callback request? Please say yes or no. No adviser is contacted by this demo.",
+        "state": "consent",
+        "citation": null,
+        "action": null
+      },
+      {
+        "customer": "no",
+        "assistant": "Understood. I will stop the screening and will not create a callback request.",
+        "state": "closed",
+        "citation": null,
+        "action": null
+      }
+    ]
+  },
+  "Q3-PH-01-taglish": {
+    "evidence_type": "scripted_text_simulation_not_a_recorded_call",
+    "market": "PH",
+    "language": "fil-PH",
+    "turns": [
+      {
+        "customer": "",
+        "assistant": "Magandang araw po. Ako ang automated demo assistant ng Bridgecall para sa fictional Harbor Life. Simulation lang ito, hindi insurance advice o offer. Maaari po ba akong magtanong para sa paunang screening? Oo o hindi po.",
+        "state": "permission",
+        "citation": null,
+        "action": null
+      },
+      {
+        "customer": "oo",
+        "assistant": "Ilang taon na po kayo? Kung nagta-type, gamitin po ang numero.",
+        "state": "age",
+        "citation": null,
+        "action": null
+      },
+      {
+        "customer": "29",
+        "assistant": "Nakatira po ba kayo ngayon sa Pilipinas? Oo o hindi po.",
+        "state": "resident",
+        "citation": null,
+        "action": null
+      },
+      {
+        "customer": "oo",
+        "assistant": "Puwede po bang gumawa ng mock adviser callback request? Oo o hindi po. Wala pang totoong adviser na makokontak sa demo.",
+        "state": "consent",
+        "citation": null,
+        "action": null
+      },
+      {
+        "customer": "Mahal ang premium, may budget option ba?",
+        "assistant": "Kung mabigat sa budget ang premium, puwedeng magpa-callback sa adviser para mapag-usapan ang budget. Walang ipinapangakong discount o approval. Puwede po bang gumawa ng mock adviser callback request? Oo o hindi po. Wala pang totoong adviser na makokontak sa demo.",
+        "state": "consent",
+        "citation": {
+          "record_id": "ph-budget-fil-PH",
+          "source": "data/raw/business.json#/4/answers/fil-PH",
+          "version": "1.0",
+          "content_sha256": "a0747cbd7d580754e4d3d9adbb1a9d6e70dea260a7441b00ec9530d1cb5b88ea",
+          "score": 5.9652
+        },
+        "action": null
+      },
+      {
+        "customer": "oo",
+        "assistant": "Anong petsa at oras po ang gusto ninyo para sa callback, oras sa Pilipinas? Halimbawa, 25 Setyembre, alas tres ng hapon.",
+        "state": "time",
+        "citation": null,
+        "action": null
+      },
+      {
+        "customer": "25 Setyembre alas tres ng hapon",
+        "assistant": "Pakikumpirma po: 25 Setyembre alas tres ng hapon, oras sa Pilipinas. Gagawa na po ba ng mock callback request? Oo o hindi po.",
+        "state": "confirm",
+        "citation": null,
+        "action": null
+      },
+      {
+        "customer": "oo",
+        "assistant": "Naitala na po sa local demo ang mock callback request. Wala pang totoong appointment o adviser na nakontak.",
+        "state": "done",
+        "citation": null,
+        "action": {
+          "id": "2fbea7af-3e28-4a32-8923-5254ed105673",
+          "type": "mock_callback",
+          "market": "PH",
+          "language": "fil-PH",
+          "slots": {
+            "age": 29,
+            "resident": true,
+            "callback_consent": true,
+            "callback_time": "25 Setyembre alas tres ng hapon"
+          },
+          "status": "local_only"
+        }
+      }
+    ]
+  },
+  "Q3-PH-02-human": {
+    "evidence_type": "scripted_text_simulation_not_a_recorded_call",
+    "market": "PH",
+    "language": "fil-PH",
+    "turns": [
+      {
+        "customer": "",
+        "assistant": "Magandang araw po. Ako ang automated demo assistant ng Bridgecall para sa fictional Harbor Life. Simulation lang ito, hindi insurance advice o offer. Maaari po ba akong magtanong para sa paunang screening? Oo o hindi po.",
+        "state": "permission",
+        "citation": null,
+        "action": null
+      },
+      {
+        "customer": "oo",
+        "assistant": "Ilang taon na po kayo? Kung nagta-type, gamitin po ang numero.",
+        "state": "age",
+        "citation": null,
+        "action": null
+      },
+      {
+        "customer": "Ano ang bank referral?",
+        "assistant": "Ang bank referral ay pagpapakilala sa insurance adviser. Insurance ito, hindi bank deposit. Hindi kami nangangako ng guaranteed investment returns. Ilang taon na po kayo? Kung nagta-type, gamitin po ang numero.",
+        "state": "age",
+        "citation": {
+          "record_id": "ph-referral-fil-PH",
+          "source": "data/raw/business.json#/6/answers/fil-PH",
+          "version": "1.0",
+          "content_sha256": "14f4b33eabc4f590edb27f347f8e81d3753c56a7d3bf6eb940388809b083c0ce",
+          "score": 5.9391
+        },
+        "action": null
+      },
+      {
+        "customer": "Gusto ko ng tao",
+        "assistant": "Puwede po akong magtala ng mock request para sa adviser. Hindi pa kayang ikonekta kayo sa totoong tao sa demo. May pahintulot po ba kayo? Oo o hindi po.",
+        "state": "consent",
+        "citation": null,
+        "action": null
+      },
+      {
+        "customer": "oo",
+        "assistant": "Anong petsa at oras po ang gusto ninyo para sa callback, oras sa Pilipinas? Halimbawa, 25 Setyembre, alas tres ng hapon.",
+        "state": "time",
+        "citation": null,
+        "action": null
+      },
+      {
+        "customer": "26 Setyembre alas dos ng hapon",
+        "assistant": "Pakikumpirma po: 26 Setyembre alas dos ng hapon, oras sa Pilipinas. Gagawa na po ba ng mock callback request? Oo o hindi po.",
+        "state": "confirm",
+        "citation": null,
+        "action": null
+      },
+      {
+        "customer": "oo",
+        "assistant": "Naitala na po sa local demo ang mock callback request. Wala pang totoong appointment o adviser na nakontak.",
+        "state": "done",
+        "citation": null,
+        "action": {
+          "id": "c183e4df-177d-427e-87fc-8f506b40f066",
+          "type": "mock_callback",
+          "market": "PH",
+          "language": "fil-PH",
+          "slots": {
+            "reason": "human_request",
+            "callback_consent": true,
+            "callback_time": "26 Setyembre alas dos ng hapon"
+          },
+          "status": "local_only"
+        }
+      }
+    ]
+  },
+  "Q3-ID-01-formal": {
+    "evidence_type": "scripted_text_simulation_not_a_recorded_call",
+    "market": "ID",
+    "language": "id-ID",
+    "turns": [
+      {
+        "customer": "",
+        "assistant": "Selamat pagi atau siang, Bapak/Ibu. Saya asisten demo otomatis Bridgecall untuk Nusantara Finance fiktif. Ini simulasi, bukan penawaran pembiayaan. Boleh saya lanjutkan? Jawab ya atau tidak.",
+        "state": "permission",
+        "citation": null,
+        "action": null
+      },
+      {
+        "customer": "ya",
+        "assistant": "Boleh saya mencatat permintaan callback untuk petugas dalam demo? Jawab ya atau tidak. Belum ada petugas yang dihubungi.",
+        "state": "consent",
+        "citation": null,
+        "action": null
+      },
+      {
+        "customer": "Berapa denda kalau telat?",
+        "assistant": "Denda mengikuti kontrak pembiayaan yang berlaku. Demo ini tidak memiliki tarif denda terverifikasi. Saya bisa mencatat permintaan bantuan petugas, tanpa menjanjikan penghapusan denda. Boleh saya mencatat permintaan callback untuk petugas dalam demo? Jawab ya atau tidak. Belum ada petugas yang dihubungi.",
+        "state": "consent",
+        "citation": {
+          "record_id": "id-penalty-id-ID",
+          "source": "data/raw/business.json#/10/answers/id-ID",
+          "version": "1.0",
+          "content_sha256": "04e212d4a37a46723c7c037cd1dc4e53ebdd859b0305c996bf9a7cff0c9ddfaa",
+          "score": 3.7327
+        },
+        "action": null
+      },
+      {
+        "customer": "ya",
+        "assistant": "Tanggal dan jam berapa Bapak/Ibu ingin ditelepon? Sebutkan juga WIB, WITA, atau WIT.",
+        "state": "time",
+        "citation": null,
+        "action": null
+      },
+      {
+        "customer": "25 September jam 10 WIB",
+        "assistant": "Mohon konfirmasi: 25 September jam 10 WIB. Simpan permintaan callback demo ini? Jawab ya atau tidak.",
+        "state": "confirm",
+        "citation": null,
+        "action": null
+      },
+      {
+        "customer": "ya",
+        "assistant": "Permintaan callback demo sudah disimpan secara lokal. Ini belum menjadi jadwal resmi dan belum ada petugas yang dihubungi.",
+        "state": "done",
+        "citation": null,
+        "action": {
+          "id": "dbb7f374-8fb1-46bc-9650-80fdedf128dc",
+          "type": "mock_callback",
+          "market": "ID",
+          "language": "id-ID",
+          "slots": {
+            "callback_consent": true,
+            "callback_time": "25 September jam 10 WIB"
+          },
+          "status": "local_only"
+        }
+      }
+    ]
+  },
+  "Q3-ID-02-colloquial": {
+    "evidence_type": "scripted_text_simulation_not_a_recorded_call",
+    "market": "ID",
+    "language": "id-ID",
+    "turns": [
+      {
+        "customer": "",
+        "assistant": "Selamat pagi atau siang, Bapak/Ibu. Saya asisten demo otomatis Bridgecall untuk Nusantara Finance fiktif. Ini simulasi, bukan penawaran pembiayaan. Boleh saya lanjutkan? Jawab ya atau tidak.",
+        "state": "permission",
+        "citation": null,
+        "action": null
+      },
+      {
+        "customer": "iya",
+        "assistant": "Boleh saya mencatat permintaan callback untuk petugas dalam demo? Jawab ya atau tidak. Belum ada petugas yang dihubungi.",
+        "state": "consent",
+        "citation": null,
+        "action": null
+      },
+      {
+        "customer": "Saya belum gajian, nggak bisa bayar cicilan",
+        "assistant": "Saya paham, Bapak/Ibu sedang kesulitan membayar. Saya bisa mencatat permintaan untuk membahas pilihan bantuan dengan petugas. Tidak ada janji penundaan, restrukturisasi, atau penghapusan denda. Boleh saya mencatat permintaan callback untuk petugas dalam demo? Jawab ya atau tidak. Belum ada petugas yang dihubungi.",
+        "state": "consent",
+        "citation": {
+          "record_id": "id-budget-id-ID",
+          "source": "data/raw/business.json#/11/answers/id-ID",
+          "version": "1.0",
+          "content_sha256": "28dfd66f0866a0e55c0b0ca0b84ba432f5d4e6a952d3ae5e6bfd07779dbbdf65",
+          "score": 7.2007
+        },
+        "action": null
+      },
+      {
+        "customer": "Jelaskan tenor dan DP",
+        "assistant": "Tenor adalah jangka waktu pembiayaan, sedangkan DP adalah uang muka. Besaran DP dan pilihan tenor harus diperiksa dalam penawaran resmi; demo ini tidak menetapkan angka. Boleh saya mencatat permintaan callback untuk petugas dalam demo? Jawab ya atau tidak. Belum ada petugas yang dihubungi.",
+        "state": "consent",
+        "citation": {
+          "record_id": "id-tenor-id-ID",
+          "source": "data/raw/business.json#/12/answers/id-ID",
+          "version": "1.0",
+          "content_sha256": "98775550be66e3d8b7cd8b3913c130b9b18d960226bb2f0a683b3f8d7d7671f0",
+          "score": 5.3885
+        },
+        "action": null
+      },
+      {
+        "customer": "mau petugas",
+        "assistant": "Saya bisa mencatat permintaan bantuan petugas. Demo ini belum bisa menyambungkan ke petugas langsung. Boleh saya catat? Jawab ya atau tidak.",
+        "state": "consent",
+        "citation": null,
+        "action": null
+      },
+      {
+        "customer": "ya",
+        "assistant": "Tanggal dan jam berapa Bapak/Ibu ingin ditelepon? Sebutkan juga WIB, WITA, atau WIT.",
+        "state": "time",
+        "citation": null,
+        "action": null
+      },
+      {
+        "customer": "26 September jam 9 WITA",
+        "assistant": "Mohon konfirmasi: 26 September jam 9 WITA. Simpan permintaan callback demo ini? Jawab ya atau tidak.",
+        "state": "confirm",
+        "citation": null,
+        "action": null
+      },
+      {
+        "customer": "ya",
+        "assistant": "Permintaan callback demo sudah disimpan secara lokal. Ini belum menjadi jadwal resmi dan belum ada petugas yang dihubungi.",
+        "state": "done",
+        "citation": null,
+        "action": {
+          "id": "8ad5fe8f-bd53-44c2-bf57-d023f1bbeaeb",
+          "type": "mock_callback",
+          "market": "ID",
+          "language": "id-ID",
+          "slots": {
+            "reason": "human_request",
+            "callback_consent": true,
+            "callback_time": "26 September jam 9 WITA"
+          },
+          "status": "local_only"
+        }
+      }
+    ]
+  }
+}

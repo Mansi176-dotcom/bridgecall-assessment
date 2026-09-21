@@ -1,0 +1,202 @@
+[
+  {
+    "speaker": "customer",
+    "text": "I have a second vehicle",
+    "confidence": 1,
+    "expected": "cross_sell",
+    "actual": [
+      "cross_sell"
+    ],
+    "pass": true,
+    "signal_ms": 1.4626249999999952
+  },
+  {
+    "speaker": "agent",
+    "text": "You will get guaranteed approval",
+    "confidence": 1,
+    "expected": "risky_promise",
+    "actual": [
+      "risky_promise"
+    ],
+    "pass": true,
+    "signal_ms": 0.37750000000000283
+  },
+  {
+    "speaker": "agent",
+    "text": "What is your age?",
+    "confidence": 1,
+    "expected": "missing_disclosure",
+    "actual": [
+      "missing_disclosure"
+    ],
+    "pass": true,
+    "signal_ms": 0.025958999999992072
+  },
+  {
+    "speaker": "customer",
+    "text": "I am frustrated; this is the third time",
+    "confidence": 1,
+    "expected": "frustration",
+    "actual": [
+      "frustration"
+    ],
+    "pass": true,
+    "signal_ms": 0.02837500000001103
+  },
+  {
+    "speaker": "customer",
+    "text": "I cannot pay this month",
+    "confidence": 1,
+    "expected": "payment_difficulty",
+    "actual": [
+      "payment_difficulty"
+    ],
+    "pass": true,
+    "signal_ms": 0.022833999999999355
+  },
+  {
+    "speaker": "customer",
+    "text": "Please call me tomorrow",
+    "confidence": 1,
+    "expected": "callback",
+    "actual": [
+      "callback"
+    ],
+    "pass": true,
+    "signal_ms": 0.0224169999999968
+  },
+  {
+    "speaker": "customer",
+    "text": "I want to apply",
+    "confidence": 1,
+    "expected": "buying_signal",
+    "actual": [
+      "buying_signal"
+    ],
+    "pass": true,
+    "signal_ms": 0.02012500000000972
+  },
+  {
+    "speaker": "customer",
+    "text": "Saya belum gajian",
+    "confidence": 1,
+    "expected": "payment_difficulty",
+    "actual": [
+      "payment_difficulty"
+    ],
+    "pass": true,
+    "signal_ms": 0.01958300000000357
+  },
+  {
+    "speaker": "customer",
+    "text": "Saya punya motor kedua",
+    "confidence": 1,
+    "expected": "cross_sell",
+    "actual": [
+      "cross_sell"
+    ],
+    "pass": true,
+    "signal_ms": 0.020791999999991706
+  },
+  {
+    "speaker": "customer",
+    "text": "Nakakainis, paulit ulit",
+    "confidence": 1,
+    "expected": "frustration",
+    "actual": [
+      "frustration"
+    ],
+    "pass": true,
+    "signal_ms": 0.019791999999990706
+  },
+  {
+    "speaker": "customer",
+    "text": "I have a second vehicle",
+    "confidence": 0.3,
+    "expected": null,
+    "actual": [],
+    "pass": true,
+    "signal_ms": 0.0021669999999973655
+  },
+  {
+    "speaker": "customer",
+    "text": "[noise] second vehicle",
+    "confidence": 1,
+    "expected": null,
+    "actual": [],
+    "pass": true,
+    "signal_ms": 0.0031669999999983656
+  },
+  {
+    "speaker": "customer",
+    "text": "maybe I heard second vehicle",
+    "confidence": 1,
+    "expected": null,
+    "actual": [],
+    "pass": true,
+    "signal_ms": 0.0027080000000040405
+  },
+  {
+    "speaker": "agent",
+    "text": "We do not promise guaranteed returns",
+    "confidence": 1,
+    "expected": null,
+    "actual": [],
+    "pass": true,
+    "signal_ms": 0.02512500000000084
+  },
+  {
+    "speaker": "agent",
+    "text": "The customer said guaranteed approval",
+    "confidence": 1,
+    "expected": null,
+    "actual": [],
+    "pass": true,
+    "signal_ms": 0.024874999999993652
+  },
+  {
+    "speaker": "customer",
+    "text": "Do you offer guaranteed approval?",
+    "confidence": 1,
+    "expected": null,
+    "actual": [],
+    "pass": true,
+    "signal_ms": 0.0154169999999898
+  },
+  {
+    "speaker": "customer",
+    "text": "I do not have a second vehicle",
+    "confidence": 1,
+    "expected": null,
+    "actual": [],
+    "pass": true,
+    "signal_ms": 0.01837500000000103
+  },
+  {
+    "speaker": "customer",
+    "text": "Thank you for explaining",
+    "confidence": 1,
+    "expected": null,
+    "actual": [],
+    "pass": true,
+    "signal_ms": 0.013499999999999623
+  },
+  {
+    "speaker": "agent",
+    "text": "This is an automated demo",
+    "confidence": 1,
+    "expected": null,
+    "actual": [],
+    "pass": true,
+    "signal_ms": 0.016499999999988746
+  },
+  {
+    "speaker": "customer",
+    "text": "I paid my installment yesterday",
+    "confidence": 1,
+    "expected": null,
+    "actual": [],
+    "pass": true,
+    "signal_ms": 0.01508400000001242
+  }
+]

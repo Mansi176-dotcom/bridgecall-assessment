@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Bridgecall | Voice, with evidence</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header>
+      <a class="brand" href="/">b<span>·</span> <strong>bridgecall</strong></a>
+      <div class="tag">
+        AI ENGINEER ASSESSMENT <span>/</span> LOCAL PROTOTYPE
+      </div>
+      <span id="connection" class="status">Connecting</span>
+    </header>
+    <main>
+      <section class="hero">
+        <div>
+          <div class="eyebrow">VOICE, WITH EVIDENCE</div>
+          <h1>A better call starts<br />with a grounded answer.</h1>
+          <p>
+            One knowledge base. Three language settings. A clear trail from
+            customer question to source-backed answer and live coaching.
+          </p>
+        </div>
+        <aside class="note">
+          <span>THE DEMO CONTRACT</span>
+          <p>
+            Fictional businesses and rules.<br />No real policies or
+            payments.<br />No fabricated call results.
+          </p>
+          <small
+            >Harbor Life · Philippines<br />Nusantara Finance · Indonesia</small
+          >
+        </aside>
+      </section>
+      <nav class="tabs" aria-label="Workspace">
+        <button class="selected" data-tab="call">01 &nbsp; Voice desk</button
+        ><button data-tab="knowledge">02 &nbsp; Knowledge explorer</button
+        ><button data-tab="insights">03 &nbsp; Live insights</button>
+      </nav>
+      <section id="call" class="panel active">
+        <div class="two">
+          <article class="card">
+            <div class="cardhead">
+              <div>
+                <div class="eyebrow">Q1 + Q3</div>
+                <h2>Start a conversation</h2>
+              </div>
+              <span id="stage" class="pill">Ready</span>
+            </div>
+            <label for="language">Market & language</label
+            ><select id="language">
+              <option value="en-PH">Philippines · English</option>
+              <option value="fil-PH">Philippines · Filipino / Taglish</option>
+              <option value="id-ID">Indonesia · Bahasa Indonesia</option>
+            </select>
+            <div class="toolbar">
+              <button id="newcall" class="primary">Start new call</button
+              ><button id="export">Export transcript</button>
+            </div>
+            <div id="conversation" class="conversation" aria-live="polite">
+              <p class="empty">
+                Start a call, then speak or type. Source citations appear beside
+                grounded answers.
+              </p>
+            </div>
+            <form id="turnform">
+              <label for="utterance">Your response</label>
+              <div class="inputrow">
+                <input
+                  id="utterance"
+                  maxlength="2000"
+                  placeholder="Type your response…"
+                  autocomplete="off"
+                /><button class="primary" type="submit">Send</button>
+              </div>
+            </form>
+            <div class="toolbar">
+              <button id="speak">Speak one turn</button
+              ><label class="check"
+                ><input id="tts" type="checkbox" checked /> Read responses
+                aloud</label
+              >
+            </div>
+            <p id="voicestatus" class="help">
+              Browser speech services vary by device. Text input always works.
+            </p>
+          </article>
+          <aside>
+            <article class="card">
+              <div class="eyebrow">A SMALL, DELIBERATE FLOW</div>
+              <h2>Permission → screening → callback</h2>
+              <p>
+                The Philippine flow checks age and residency. Both markets
+                require explicit callback consent and a confirmed time.
+              </p>
+              <ul class="steps">
+                <li>
+                  <b>Grounded</b> Business answers come from reviewed records.
+                </li>
+                <li>
+                  <b>Conservative</b> Missing information produces a fallback.
+                </li>
+                <li><b>Inspectable</b> Mock actions appear in the export.</li>
+              </ul>
+              <div class="notice">
+                Native TTS is used only when the device exposes a matching
+                voice. Missing voices are reported, never silently replaced by
+                an English voice.
+              </div>
+            </article>
+            <article class="card">
+              <h3>Microphone recording</h3>
+              <p class="help">
+                Record consenting testers only. This saves the microphone track;
+                capture system audio separately for a complete two-sided call.
+              </p>
+              <button id="recordcall">Record microphone</button>
+              <div id="recordstatus" class="help">
+                No recording in progress.
+              </div>
+            </article>
+            <article class="card">
+              <h3>Try a failure case</h3>
+              <div class="chips">
+                <button data-example="Does this cover cancer surgery?">
+                  Unverified benefit</button
+                ><button data-example="I want a human">Human assistance</button
+                ><button data-example="The premium is expensive">
+                  Budget concern
+                </button>
+              </div>
+            </article>
+          </aside>
+        </div>
+      </section>
+      <section id="knowledge" class="panel">
+        <article class="card">
+          <div class="eyebrow">Q2 · TRACEABLE RETRIEVAL</div>
+          <h2>Inspect the answer before trusting it.</h2>
+          <p>
+            Search uses the selected call language. Scores are lexical
+            relevance, not calibrated confidence.
+          </p>
+          <form id="searchform" class="inputrow">
+            <input
+              id="query"
+              placeholder="What happens if I miss a premium?"
+              required
+            /><button class="primary">Retrieve records</button>
+          </form>
+          <div id="results" class="results"></div>
+        </article>
+      </section>
+      <section id="insights" class="panel">
+        <div class="two">
+          <article class="card">
+            <div class="cardhead">
+              <div>
+                <div class="eyebrow">Q4 · LIVE COACHING</div>
+                <h2>Help while the call is happening.</h2>
+              </div>
+              <span id="livestate" class="pill">Idle</span>
+            </div>
+            <p>
+              Live audio is captured in independent four-second WAV windows and
+              transcribed while capture continues. Text checks validate rules
+              only; they are not audio evidence.
+            </p>
+            <label class="check consent"
+              ><input id="audioconsent" type="checkbox" /> Testers consent to
+              recording and sending audio to the configured ASR provider.</label
+            >
+            <div class="toolbar">
+              <button id="live" class="primary">Start live microphone</button
+              ><button id="stoplive" disabled>Stop & save WAV</button
+              ><button id="exportmetrics">Export evidence</button>
+            </div>
+            <label for="speaker"
+              >Speaker for the next audio window (manual separation)</label
+            ><select id="speaker">
+              <option value="customer">Customer</option>
+              <option value="agent">Human agent being coached</option>
+            </select>
+            <p class="help">
+              For skipped-disclosure testing, start a fresh coach session. Do
+              not use this mode to listen to the automated bot at the same time.
+            </p>
+            <button id="resetcoach">Reset coach session</button>
+            <hr />
+            <form id="analyzeform">
+              <label for="signaltext">Text-only rule check</label>
+              <div class="inputrow">
+                <input
+                  id="signaltext"
+                  placeholder="I have a second vehicle"
+                  required
+                /><button>Check rule</button>
+              </div>
+              <label class="check"
+                ><input id="uncertain" type="checkbox" /> Low-confidence / noisy
+                hypothesis</label
+              >
+            </form>
+            <div id="streamlog" class="streamlog" aria-live="polite"></div>
+          </article>
+          <aside>
+            <article class="card">
+              <div class="eyebrow">ACTIVE RECOMMENDATIONS</div>
+              <h2>Short. Timely. Explainable.</h2>
+              <div id="nudges"><p class="empty">No active nudges.</p></div>
+            </article>
+            <article class="card">
+              <div class="eyebrow">MEASURED IN THIS BROWSER</div>
+              <div class="metrics">
+                <div>
+                  <strong id="p50">—</strong><span>P50 audio → display</span>
+                </div>
+                <div>
+                  <strong id="p95">—</strong><span>P95 audio → display</span>
+                </div>
+              </div>
+              <p id="metricsnote" class="help">
+                No live-audio observations yet. Text timing is exported
+                separately.
+              </p>
+              <p class="help">
+                Includes the capture window. ASR = server provider round trip.
+                Signal detection is measured separately. LLM: not used. Delivery
+                is a residual estimate, including upload and UI scheduling.
+              </p>
+            </article>
+          </aside>
+        </div>
+      </section>
+      <div id="error" class="error" role="alert" hidden></div>
+      <footer>
+        Built for a review you can reproduce.
+        <span>Evidence over promises.</span>
+      </footer>
+    </main>
+    <script src="/app.js"></script>
+  </body>
+</html>

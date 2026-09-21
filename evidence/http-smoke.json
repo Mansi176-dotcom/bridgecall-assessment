@@ -1,0 +1,12 @@
+{
+  "status": "pass",
+  "checks": [
+    "HTTP complete consent and callback flow",
+    "HTTP locale-specific grounded answer",
+    "Fresh coach session catches skipped disclosure",
+    "Missing-token request rejected",
+    "Static route cannot serve .env"
+  ],
+  "asr_configured": false,
+  "scope": "Local HTTP/text only; no audio/provider run"
+}

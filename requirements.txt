@@ -1,0 +1,2 @@
+# No third-party dependencies for the core app or tests (Python 3.9+).
+# Optional PDF ingestion: install pypdf, then add reviewed PDF material to data/raw.

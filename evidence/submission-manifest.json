@@ -1,0 +1,67 @@
+{
+  "status": "not_submission_ready",
+  "repository_url": "https://github.com/Mansi176-dotcom/bridgecall-assessment",
+  "walkthrough_url": "",
+  "live_demo_recording_url": "",
+  "live_metrics_url": "",
+  "asr_report_url": "",
+  "links_checked_signed_out": false,
+  "calls": [
+    {
+      "id": "Q1-01",
+      "recording_url": "",
+      "transcript_url": "",
+      "result": "pending",
+      "requires_regional_accent": false,
+      "accent_observations": ""
+    },
+    {
+      "id": "Q1-02",
+      "recording_url": "",
+      "transcript_url": "",
+      "result": "pending",
+      "requires_regional_accent": false,
+      "accent_observations": ""
+    },
+    {
+      "id": "Q1-03",
+      "recording_url": "",
+      "transcript_url": "",
+      "result": "pending",
+      "requires_regional_accent": false,
+      "accent_observations": ""
+    },
+    {
+      "id": "Q3-PH-01",
+      "recording_url": "",
+      "transcript_url": "",
+      "result": "pending",
+      "requires_regional_accent": false,
+      "accent_observations": ""
+    },
+    {
+      "id": "Q3-PH-02",
+      "recording_url": "",
+      "transcript_url": "",
+      "result": "pending",
+      "requires_regional_accent": false,
+      "accent_observations": ""
+    },
+    {
+      "id": "Q3-ID-01",
+      "recording_url": "",
+      "transcript_url": "",
+      "result": "pending",
+      "requires_regional_accent": false,
+      "accent_observations": ""
+    },
+    {
+      "id": "Q3-ID-02",
+      "recording_url": "",
+      "transcript_url": "",
+      "result": "pending",
+      "requires_regional_accent": true,
+      "accent_observations": ""
+    }
+  ]
+}

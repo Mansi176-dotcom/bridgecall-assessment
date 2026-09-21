@@ -1,0 +1,10 @@
+{
+  "PH": {
+    "minimum_age": 18,
+    "maximum_age": 60,
+    "resident_required": true
+  },
+  "ID": {
+    "qualification": "officer_review_only"
+  }
+}
