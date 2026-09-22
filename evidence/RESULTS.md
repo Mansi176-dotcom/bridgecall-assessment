@@ -4,16 +4,17 @@ These results come from authored text fixtures. No recordings or ASR quality cla
 
 | Check | Result |
 |---|---|
-| Retrieval + abstention | 13/13 |
+| Retrieval + abstention | 14/14 |
 | Nudge fixture checks | 20/20 |
 | Nudge TP / FP / TN / FN | 10 / 0 / 10 / 0 |
-| Signal-only latency P50 / P95 | 0.020 / 0.378 ms |
+| Signal-only latency P50 / P95 | 0.020 / 0.395 ms |
 | Audio → display P50 / P95 | Not measured; run live audio |
 
 ## Retrieval cases
 
 | Question | Selected record | Verdict |
 |---|---|
+| What happens if I miss a premium? | ph-lapse-en-PH | correct |
 | What coverage does the life insurance product provide? | ph-product-en-PH | correct |
 | Who is eligible based on age? | ph-qualification-en-PH | correct |
 | What happens if my policy lapses after a missed premium? | ph-lapse-en-PH | correct |

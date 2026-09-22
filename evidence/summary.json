@@ -2,8 +2,8 @@
   "evidence_type": "synthetic_text_fixtures_only",
   "python": "3.9.6",
   "platform": "macOS-26.5.1-arm64-arm-64bit",
-  "retrieval_correct": 13,
-  "retrieval_total": 13,
+  "retrieval_correct": 14,
+  "retrieval_total": 14,
   "nudge_cases": 20,
   "nudge_pass": 20,
   "tp": 10,
@@ -12,8 +12,8 @@
   "fn": 0,
   "fixture_false_positive_rate": 0.0,
   "text_signal_latency_ms": {
-    "p50": 0.019791999999990706,
-    "p95": 0.37750000000000283
+    "p50": 0.02016700000000149,
+    "p95": 0.3945840000000034
   },
   "audio_asr_latency": null,
   "audio_end_to_end_latency": null,

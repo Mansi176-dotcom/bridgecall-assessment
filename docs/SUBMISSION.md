@@ -1,13 +1,13 @@
 # Submission checklist
 
-**The current package is not yet a complete assessment submission.** Code, documentation, synthetic inputs, and text evaluations are included. The required recorded evidence, account-backed ASR checks, and accessible links still need to be completed.
+**The current package is not yet a complete assessment submission.** Code, documentation, synthetic inputs, and text evaluations are included. The required recorded evidence, account-backed ASR checks, still need to be completed. The repository, screenshots, documentation, and checked-in results are publicly accessible.
 
 ## What is already included
 
 - Runnable local web app with a shared KB and source-cited responses.
 - Philippine English, Filipino/Taglish, and Indonesian dialogue settings.
 - Explicit screening, conflict handling, unsupported-answer fallback, consent, and mock callback flow.
-- JSON/HTML/CSV/text inputs; ingestion report, review queue, 22 approved records, schema, taxonomy, hashes, and retrieval evidence.
+- JSON/HTML/CSV/text inputs; ingestion report, review queue, 23 approved records, schema, taxonomy, hashes, and retrieval evidence.
 - Optional provider-backed live microphone transcription with nudge controls and timing export.
 - Automated tests, text evaluations, simulated transcripts labeled as simulations, and GitHub Actions configuration.
 - `.env.example`, setup instructions, architecture diagram, localization notes, known limitations, walkthrough outline, email draft, and interview preparation.
@@ -17,7 +17,7 @@
 | Required item | Current status | Completion action |
 |---|---|---|
 | Actual business script / rules / sources | Not supplied | Obtain them if available, replace fictional content, rerun tests |
-| Public/access-granted GitHub repository | Private draft; see repository link in README | Add reviewer access or make public after evidence review |
+| Public GitHub repository | Published | Repository and supporting source links verified without authentication |
 | Web calling interface | Local implementation | Verify microphone/TTS in a supported browser; share setup and preferably a working hosted implementation if time permits |
 | Q1 three recorded calls | Missing | Run Q1-01 through Q1-03; include both sides, transcript, and actual result |
 | Q2 retrieval evidence | Included | Review source matches and add actual business queries if sources change |
@@ -27,14 +27,14 @@
 | Q4 live audio recording and metrics | Missing | Run configured microphone pipeline; show nudges before stop; export P50/P95/component data |
 | Real-audio false-positive review | Missing | Label real windows, report errors and sample size |
 | Video walkthrough | Missing | Record the 5–7 minute outline after functional checks |
-| Accessible links | Not checked | Test every URL in a signed-out/private browser |
+| Code, documentation, screenshot links | Public links checked | Check any future recording/video links separately |
 | Reply in original email thread | Not sent | Paste the final reviewed email, preserving the thread |
 
 Seven separate calls make coverage easy to audit. If you reuse recordings across Q1 and Q3, explicitly map each requirement to a time range and preserve each question's minimum coverage. Q4 may reuse call audio only if replayed at real-time speed through a working streaming path; this build uses live microphone input instead.
 
 ## Publish or update the repository
 
-The prepared draft is private. In the existing checkout, use `git add`, `git commit`, and `git push` to update it. The full initialization commands below are only for creating a new repository elsewhere. Do not rerun `gh repo create` for an existing repository.
+The prepared repository is public at https://github.com/Mansi176-dotcom/bridgecall-assessment. In the existing checkout, use `git add`, `git commit`, and `git push` to update it. The full initialization commands below are only for creating a new repository elsewhere. Do not rerun `gh repo create` for an existing repository.
 
 GitHub CLI authentication is available on the preparation machine. On another machine, authenticate yourself; do not paste tokens into the conversation or commit them.
 

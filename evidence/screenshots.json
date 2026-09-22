@@ -1,0 +1,51 @@
+[
+  {
+    "file": "docs/screenshots/00-overview.png",
+    "caption": "Local server connected; three workspaces are available.",
+    "capture_date": "2026-09-23",
+    "input_mode": "typed_test",
+    "sha256": "7e344f2e77097c1fa9c819b30adbbbe9191e80c1bab00b766b7b8e4c59a0010a"
+  },
+  {
+    "file": "docs/screenshots/01-grounded-answer.png",
+    "caption": "A beneficiary question returns the approved answer and exact source citation.",
+    "capture_date": "2026-09-23",
+    "input_mode": "typed_test",
+    "sha256": "13389793a9f4b52681a122ba331a4ac01bc220cc8766658b5ad18a0865338bac"
+  },
+  {
+    "file": "docs/screenshots/02-knowledge-retrieval.png",
+    "caption": "A missed-premium question ranks the policy record first, with source, version, and content hash.",
+    "capture_date": "2026-09-23",
+    "input_mode": "typed_test",
+    "sha256": "8d2fe056106579a71b37444b5c27da79f2ef02b482b82185a26c5daac492fac5"
+  },
+  {
+    "file": "docs/screenshots/03-coaching-text-test.png",
+    "caption": "A second-vehicle phrase triggers an opportunity nudge. Audio timing remains unmeasured.",
+    "capture_date": "2026-09-23",
+    "input_mode": "typed_test",
+    "sha256": "209a57bc542dfbb4b574e61e238c4663efddd13cffc37467c9cae49ab3e7831e"
+  },
+  {
+    "file": "docs/screenshots/04-filipino-taglish.png",
+    "caption": "The bank-referral answer and consent reminder remain in the selected locale.",
+    "capture_date": "2026-09-23",
+    "input_mode": "typed_test",
+    "sha256": "d460571a853aa9f32a690a544569eba233b1a4d393367a2c5868fec209ddd2c9"
+  },
+  {
+    "file": "docs/screenshots/05-indonesian.png",
+    "caption": "A denda question returns the Indonesian policy record without inventing a fee.",
+    "capture_date": "2026-09-23",
+    "input_mode": "typed_test",
+    "sha256": "b260a8e962061403dc81bfec627251451bd8a60046df070eed86ec90cdc0de5c"
+  },
+  {
+    "file": "docs/screenshots/06-unsupported-question.png",
+    "caption": "An unsupported medical-coverage question receives an explicit unavailable-information response.",
+    "capture_date": "2026-09-23",
+    "input_mode": "typed_test",
+    "sha256": "2eb6c8f1d1424b33f5350d23d6de739b2651d9580a92b7f5a29b6c4463b08437"
+  }
+]

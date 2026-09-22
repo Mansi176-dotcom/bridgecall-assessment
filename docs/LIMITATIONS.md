@@ -2,7 +2,7 @@
 
 ## Implemented and locally checked
 
-The local web app loads; a typed voice-desk question returns a source-cited answer; a text coaching input displays the expected opportunity nudge; audio latency remains blank in text mode. The 26 automated checks, 13 retrieval cases, and 20 nudge fixtures pass on the development machine. These checks cover only the described test conditions.
+The local web app loads; a typed voice-desk question returns a source-cited answer; a text coaching input displays the expected opportunity nudge; audio latency remains blank in text mode. The 27 automated checks, 14 retrieval cases, and 20 nudge fixtures pass on the development machine. These checks cover only the described test conditions.
 
 ## Not yet validated or complete
 
@@ -14,7 +14,7 @@ The local web app loads; a typed voice-desk question returns a source-cited answ
 - **Knowledge:** pattern-based PII masking is incomplete. Saved HTML/CSV/text/JSON are exercised; optional PDF extraction is not. No OCR, multilingual embedding index, version-history service, general contradiction resolution, or dynamic crawling is present.
 - **Nudges:** phrase rules miss semantic variants. Confidence is not calibrated for provider audio. Silence filtering does not solve noisy ASR hallucinations. Topic tracking only follows matched signals; no general sentiment classifier exists.
 - **Live audio:** four-second windows can split words. ScriptProcessor runs on the UI thread. Queues are bounded but failed windows are not retried automatically; stale advice is less useful than a visible error. ASR should be tested under slow networks and outages.
-- **Deployment:** loopback only, ephemeral local token, no user accounts or durable storage. The standard-library server is not an internet-facing production host. There is no public hosted demo URL. The draft GitHub repository is private and requires reviewer access before submission.
+- **Deployment:** loopback only, ephemeral local token, no user accounts or durable storage. The standard-library server is not an internet-facing production host. There is no public hosted demo URL. The GitHub repository is public; its local demo still requires running the backend.
 
 ## Next steps in order
 

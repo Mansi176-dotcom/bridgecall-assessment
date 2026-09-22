@@ -1,5 +1,44 @@
 [
   {
+    "question": "What happens if I miss a premium?",
+    "market": "PH",
+    "language": "en-PH",
+    "expected": "ph-lapse",
+    "retrieved": [
+      {
+        "record_id": "ph-lapse-en-PH",
+        "source": "data/raw/business.json#/3/answers/en-PH",
+        "content": "Missing a premium may affect coverage. The actual policy determines any grace period or lapse. No grace-period length is approved in this demo; request adviser assistance.",
+        "score": 4.2289,
+        "matched": [
+          "missed",
+          "premium"
+        ]
+      },
+      {
+        "record_id": "ph-premium-en-PH",
+        "source": "data/raw/business.json#/2/answers/en-PH",
+        "content": "A premium is the amount paid to keep a policy in force, subject to its terms. This demo has no verified premium schedule. An adviser must confirm a quote; do not send money through this demo.",
+        "score": 1.5494,
+        "matched": [
+          "premium"
+        ]
+      },
+      {
+        "record_id": "ph-budget-en-PH",
+        "source": "data/raw/business.json#/4/answers/en-PH",
+        "content": "If the premium feels expensive, offer an adviser callback to discuss the customer’s budget. Do not invent a discount, reduce cover without consent, or promise acceptance.",
+        "score": 0.9546,
+        "matched": [
+          "premium"
+        ]
+      }
+    ],
+    "selected": "ph-lapse-en-PH",
+    "verdict": "correct",
+    "relevance_explanation": "Expected topic: ph-lapse; lexical matches recorded above."
+  },
+  {
     "question": "What coverage does the life insurance product provide?",
     "market": "PH",
     "language": "en-PH",
@@ -9,7 +48,7 @@
         "record_id": "ph-product-en-PH",
         "source": "data/raw/business.json#/0/answers/en-PH",
         "content": "The fictional Harbor Life plan provides life cover. Benefits and exclusions depend on the issued policy; this demo does not quote a coverage amount.",
-        "score": 7.3597,
+        "score": 7.3507,
         "matched": [
           "coverage",
           "insurance",
@@ -21,7 +60,7 @@
         "record_id": "ph-referral-en-PH",
         "source": "data/raw/business.json#/6/answers/en-PH",
         "content": "A bank referral connects the customer to an insurance adviser. This fictional product is insurance, not a bank deposit. Do not promise guaranteed investment returns.",
-        "score": 3.1474,
+        "score": 3.1431,
         "matched": [
           "insurance",
           "product"
@@ -31,7 +70,7 @@
         "record_id": "ph-lapse-en-PH",
         "source": "data/raw/business.json#/3/answers/en-PH",
         "content": "Missing a premium may affect coverage. The actual policy determines any grace period or lapse. No grace-period length is approved in this demo; request adviser assistance.",
-        "score": 1.2435,
+        "score": 1.2412,
         "matched": [
           "coverage"
         ]
@@ -51,7 +90,7 @@
         "record_id": "ph-qualification-en-PH",
         "source": "data/raw/business.json#/1/answers/en-PH",
         "content": "For this fictional demo, initial screening requires age 18–60, Philippine residency, and permission for an adviser callback. Screening is not approval or a quotation.",
-        "score": 4.2991,
+        "score": 4.293,
         "matched": [
           "age",
           "eligible"
@@ -72,9 +111,20 @@
         "record_id": "ph-lapse-en-PH",
         "source": "data/raw/business.json#/3/answers/en-PH",
         "content": "Missing a premium may affect coverage. The actual policy determines any grace period or lapse. No grace-period length is approved in this demo; request adviser assistance.",
-        "score": 4.5477,
+        "score": 7.3111,
         "matched": [
+          "lapse",
           "missed",
+          "policy",
+          "premium"
+        ]
+      },
+      {
+        "record_id": "ph-premium-en-PH",
+        "source": "data/raw/business.json#/2/answers/en-PH",
+        "content": "A premium is the amount paid to keep a policy in force, subject to its terms. This demo has no verified premium schedule. An adviser must confirm a quote; do not send money through this demo.",
+        "score": 2.1943,
+        "matched": [
           "policy",
           "premium"
         ]
@@ -83,19 +133,8 @@
         "record_id": "ph-budget-en-PH",
         "source": "data/raw/business.json#/4/answers/en-PH",
         "content": "If the premium feels expensive, offer an adviser callback to discuss the customer’s budget. Do not invent a discount, reduce cover without consent, or promise acceptance.",
-        "score": 2.7314,
+        "score": 0.9546,
         "matched": [
-          "if",
-          "premium"
-        ]
-      },
-      {
-        "record_id": "ph-premium-en-PH",
-        "source": "data/raw/business.json#/2/answers/en-PH",
-        "content": "A premium is the amount paid to keep a policy in force, subject to its terms. This demo has no verified premium schedule. An adviser must confirm a quote; do not send money through this demo.",
-        "score": 2.1969,
-        "matched": [
-          "policy",
           "premium"
         ]
       }
@@ -114,7 +153,7 @@
         "record_id": "ph-beneficiary-en-PH",
         "source": "data/raw/business.json#/5/answers/en-PH",
         "content": "A beneficiary is the person designated to receive a covered benefit, subject to policy terms. A rider is an optional additional benefit; availability and cost require adviser confirmation.",
-        "score": 2.834,
+        "score": 2.8315,
         "matched": [
           "beneficiary"
         ]
@@ -134,7 +173,7 @@
         "record_id": "ph-budget-en-PH",
         "source": "data/raw/business.json#/4/answers/en-PH",
         "content": "If the premium feels expensive, offer an adviser callback to discuss the customer’s budget. Do not invent a discount, reduce cover without consent, or promise acceptance.",
-        "score": 5.2737,
+        "score": 5.3133,
         "matched": [
           "budget",
           "expensive"
@@ -144,7 +183,7 @@
         "record_id": "ph-beneficiary-en-PH",
         "source": "data/raw/business.json#/5/answers/en-PH",
         "content": "A beneficiary is the person designated to receive a covered benefit, subject to policy terms. A rider is an optional additional benefit; availability and cost require adviser confirmation.",
-        "score": 0.683,
+        "score": 0.6822,
         "matched": [
           "and"
         ]
@@ -153,7 +192,7 @@
         "record_id": "ph-product-en-PH",
         "source": "data/raw/business.json#/0/answers/en-PH",
         "content": "The fictional Harbor Life plan provides life cover. Benefits and exclusions depend on the issued policy; this demo does not quote a coverage amount.",
-        "score": 0.5134,
+        "score": 0.5125,
         "matched": [
           "and"
         ]
@@ -349,7 +388,7 @@
         "record_id": "ph-product-en-PH",
         "source": "data/raw/business.json#/0/answers/en-PH",
         "content": "The fictional Harbor Life plan provides life cover. Benefits and exclusions depend on the issued policy; this demo does not quote a coverage amount.",
-        "score": 1.812,
+        "score": 1.81,
         "matched": [
           "coverage"
         ]
@@ -358,7 +397,7 @@
         "record_id": "ph-lapse-en-PH",
         "source": "data/raw/business.json#/3/answers/en-PH",
         "content": "Missing a premium may affect coverage. The actual policy determines any grace period or lapse. No grace-period length is approved in this demo; request adviser assistance.",
-        "score": 1.2435,
+        "score": 1.2412,
         "matched": [
           "coverage"
         ]

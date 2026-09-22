@@ -11,7 +11,7 @@ The business answer is retrieved from versioned records. The same source is insp
 It is retrieval-grounded response selection. It does not use a generative answer model. An ASR model converts live audio to text; deterministic logic retrieves an approved answer or produces a fallback. Calling it LLM RAG would overstate the implementation.
 
 **Why no vector database?**
-The corpus has 22 language-specific chunks. Lexical search is sufficient for a baseline, cheap to run, and easy to inspect. It misses paraphrases. A larger corpus needs a held-out comparison before adopting embeddings and a reranker.
+The corpus has 23 language-specific chunks. Lexical search is sufficient for a baseline, cheap to run, and easy to inspect. It misses paraphrases. A larger corpus needs a held-out comparison before adopting embeddings and a reranker.
 
 **How do you know it doesn't invent policy details?**
 It returns reviewed text instead of generating new business claims. That reduces invention, but it can still retrieve the wrong passage or inherit a bad source. Source review, gating, and evaluation matter; “zero hallucinations” would be too strong.

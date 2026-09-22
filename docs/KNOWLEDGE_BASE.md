@@ -31,13 +31,13 @@ Regex redaction masks emails, long phone/identifier-like sequences, and explicit
 | `authority`, `status` | Fictional approved demo / approval boundary |
 | `pii_redacted` | Whether masking changed the approved answer |
 
-A sample record can be inspected in `data/processed/records.json`. There are 22 locale-specific records across product, qualification, FAQ, policy, objection, and action categories.
+A sample record can be inspected in `data/processed/records.json`. There are 23 locale-specific records across product, qualification, FAQ, policy, objection, and action categories.
 
 ## Chunking, indexing, retrieval
 
 One short policy/FAQ answer is one chunk; a rule and its caveat stay together. There is no overlapping fixed-token slicing in this small corpus. Longer real documents should be chunked by section with heading context and explicit table units, and split only after preserving conditions/exclusions.
 
-The index is an in-memory term-frequency representation rebuilt from the reviewed source. Ranking uses BM25-style inverse document frequency, length normalization, k1 = 1.2, and b = 0.75. Locale and market filtering happen before ranking. A minimum score of 1.25 plus overlap with the record's domain vocabulary gates the answer; explicit unsupported-topic checks demonstrate abstention. These are prototype heuristics, not calibrated confidence or general hallucination protection.
+The index is an in-memory term-frequency representation rebuilt from the reviewed source. A small explicit normalization map groups `miss`/`missing` with `missed`, `premiums` with `premium`, and `lapses` with `lapse`. This fixes an observed UI failure without claiming general morphological coverage. Common question words are removed. Ranking uses BM25-style inverse document frequency, length normalization, k1 = 1.2, and b = 0.75. Locale and market filtering happen before ranking. A minimum score of 1.25 plus overlap with the record's domain vocabulary gates the answer; explicit unsupported-topic checks demonstrate abstention. These are prototype heuristics, not calibrated confidence or general hallucination protection.
 
 Embeddings are intentionally not used. With this tiny reviewed corpus, lexical search is reproducible and works without an embedding account. The cost is weak paraphrase recall and dependence on curated local vocabulary. A production successor should evaluate multilingual dense retrieval plus lexical ranking on held-out questions, with a reranker and contradiction-aware source precedence. Choose thresholds from actual error costs, not this small fixture set.
 
@@ -45,4 +45,4 @@ Citations carry the exact record ID, JSON pointer, version, and content hash. Th
 
 ## Evaluation
 
-Run `python3 -m scripts.evaluate`. The output includes 13 questions, retrieved passages, source references, lexical matches, expected topics, answer selection, and verdicts. Product, policy, qualification, FAQ, objection, and unsupported questions are represented. Tests resolve every approved answer back to its source. Review the full JSON to spot incorrect supporting passages even when a top-result test passes.
+Run `python3 -m scripts.evaluate`. The output includes 14 questions, retrieved passages, source references, lexical matches, expected topics, answer selection, and verdicts. Product, policy, qualification, FAQ, objection, and unsupported questions are represented. Tests resolve every approved answer back to its source. Review the full JSON to spot incorrect supporting passages even when a top-result test passes.

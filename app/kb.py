@@ -8,13 +8,21 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 STOP = set(
-    "a an the is are of to for in on this that it i my me can do does what how your you ang po ng sa ano ba yang saya ini apa dan untuk please".split()
+    "a an the is are of to for in on this that it i my me can do does what how if when after happens your you ang po ng sa ano ba yang saya ini apa dan untuk please".split()
 )
+
+
+TERM_ALIASES = {
+    "miss": "missed",
+    "missing": "missed",
+    "lapses": "lapse",
+    "premiums": "premium",
+}
 
 
 def tokens(text):
     return [
-        t
+        TERM_ALIASES.get(t, t)
         for t in re.findall(r"\w+", unicodedata.normalize("NFKC", text).lower())
         if t not in STOP
     ]

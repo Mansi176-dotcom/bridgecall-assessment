@@ -6,6 +6,7 @@ from app.agent import Agent
 from app.nudges import NudgeEngine
 
 QUERIES = [
+    ("What happens if I miss a premium?", "PH", "en-PH", "ph-lapse"),
     (
         "What coverage does the life insurance product provide?",
         "PH",

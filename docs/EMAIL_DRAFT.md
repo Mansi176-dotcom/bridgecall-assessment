@@ -1,28 +1,28 @@
-# Reply in the original assessment email thread
+# Copy-paste email
 
-Do not send this draft with placeholders or uncompleted evidence. Keep the existing subject. Use the wording below only after the recordings and links actually exist.
-
----
-
-Hi [Recruiter name / Team],
-
-Thank you for the opportunity. Please find my AI Engineer assessment submission below.
-
-**Repository:** [GitHub link]
-**Walkthrough:** [Video link]
-**Call recordings, transcripts, and test results:** [Evidence folder link]
-
-The project, Bridgecall, connects a traceable knowledge base to a voice workflow, adds Philippine and Indonesian conversation variants, and surfaces live call-coaching nudges. The repository includes setup instructions, the architecture, retrieval tests, latency measurements, and known limitations.
-
-A useful part of the demo is the unsupported-question path: when the source material does not contain a verified answer, the agent says so and offers the documented assistance route. Each supported business answer includes its source reference.
-
-[If still applicable: I used clearly marked fictional business content because a separate source pack was not included. The handoff/CRM action is a local mock, as documented.]
-
-I have checked that the links above are accessible. I would be happy to walk through the implementation and discuss the design choices.
-
-Best,
-[Your name]
+Reply in the original assessment email thread and keep its subject. This wording describes the package as it exists, including the outstanding audio evidence.
 
 ---
 
-Before sending, remove the editorial bracketed instructions, insert real links, and only retain claims you verified. If you did not measure live audio or complete a required test, state the gap explicitly rather than leaving the completed-submission wording unchanged.
+Hi Team,
+
+Thank you for the opportunity. I’m sharing Bridgecall, my AI Engineer assessment implementation, for your review.
+
+**Public GitHub repository:** https://github.com/Mansi176-dotcom/bridgecall-assessment
+
+**Reviewer guide:** https://github.com/Mansi176-dotcom/bridgecall-assessment/blob/main/docs/REVIEW_GUIDE.md
+
+**Application screenshots:** https://github.com/Mansi176-dotcom/bridgecall-assessment/blob/main/docs/SCREENSHOTS.md
+
+**Test results:** https://github.com/Mansi176-dotcom/bridgecall-assessment/blob/main/evidence/RESULTS.md
+
+The repository includes the source code, setup instructions, environment-variable template, architecture, knowledge-base records, localized Philippine and Indonesian flows, coaching logic, and documented limitations.
+
+A key design choice is to attach a source reference to supported business answers and explicitly fall back when verified information is unavailable. The current checks pass: 27 automated tests, 14 retrieval/abstention cases, and 20 nudge cases. These are text-based regression tests; the screenshots show actual application outputs.
+
+This version does not include the required call recordings, walkthrough video, native-speaker/regional-accent evaluation, or provider-backed live-audio measurements. Those gaps are documented in the reviewer guide. The business data is fictional, and the callback action is a local mock.
+
+The repository and supporting links are public. I would be happy to walk through the implementation and discuss the design decisions.
+
+Best regards,
+Mansi Birhman

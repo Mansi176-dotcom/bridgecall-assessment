@@ -17,6 +17,15 @@ class GroundingTests(unittest.TestCase):
                 r["content"], redact(sources[idx]["answers"][r["language"]])
             )
 
+    def test_missed_payment_word_forms(self):
+        for question in (
+            "What happens if I miss a premium?",
+            "What happens after missing premiums?",
+        ):
+            hit = self.kb.answer(question, "PH", "en-PH")
+            self.assertIsNotNone(hit)
+            self.assertEqual(hit["record_id"], "ph-lapse-en-PH")
+
     def test_market_and_language_isolation(self):
         for r in self.kb.search("premium", "ID", "id-ID"):
             self.assertEqual(r["market"], "ID")

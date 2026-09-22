@@ -1,22 +1,29 @@
 # Bridgecall
 ### Grounded voice conversations, with evidence attached.
 
+[![Core checks](https://github.com/Mansi176-dotcom/bridgecall-assessment/actions/workflows/tests.yml/badge.svg)](https://github.com/Mansi176-dotcom/bridgecall-assessment/actions/workflows/tests.yml)
+
+[Reviewer guide](docs/REVIEW_GUIDE.md) · [Screenshots](docs/SCREENSHOTS.md) · [Test results](evidence/RESULTS.md) · [Architecture](docs/ARCHITECTURE.md)
+
+![Bridgecall interface](docs/screenshots/00-overview.png)
+
 Bridgecall is a local assessment prototype for Philippine life-insurance screening and Indonesian consumer-finance follow-up. It connects a reviewed knowledge base to a voice-capable conversation flow and a live call-coaching dashboard.
 
 The useful part is inspectable: an answer carries a source record; a coaching nudge carries the phrase that triggered it; missing policy information produces a fallback.
 
 **Current status:** runnable local implementation with passing text regression checks. Real call recordings, native-speaker/accent testing, provider-backed live-audio latency, and a walkthrough video are still required before submission. See [submission checklist](docs/SUBMISSION.md). Fictional business data is used because no actual business script or source pack was provided.
 
-**Private draft repository:** https://github.com/Mansi176-dotcom/bridgecall-assessment
+**Public repository:** https://github.com/Mansi176-dotcom/bridgecall-assessment
 
-The repository requires explicit reviewer access or a later visibility change. A private link alone does not satisfy the assessment’s accessibility requirement.
+Screenshots are actual captures of the locally running application using typed inputs. They do not substitute for recorded calls or live-audio measurements.
 
-## Run in two commands
+## Run locally
 
 Requires Python 3.9+ and a browser. No package installation is needed for the core workflow.
 
 ```bash
-cd bridgecall
+git clone https://github.com/Mansi176-dotcom/bridgecall-assessment.git
+cd bridgecall-assessment
 python3 -m app.server
 ```
 
@@ -54,8 +61,8 @@ The last command intentionally fails until real media and sharing links are supp
 
 | Evidence | Result | Scope |
 |---|---|---|
-| Core tests | 26 passing | Source resolution, consent, qualification, fallback, locale isolation, nudge controls |
-| Retrieval and abstention | 13/13 | Authored questions; not an independent benchmark |
+| Core tests | 27 passing | Source resolution, consent, qualification, fallback, locale isolation, nudge controls |
+| Retrieval and abstention | 14/14 | Authored questions; not an independent benchmark |
 | Nudge rules | 20/20 | 10 positive and 10 negative/noisy text fixtures |
 | Recorded calls / native speech quality | Pending | No ASR or accent quality claim |
 | Live audio P50/P95 | Pending | Measured by the app after an actual audio run |
