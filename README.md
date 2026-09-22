@@ -3,7 +3,7 @@
 
 [![Core checks](https://github.com/Mansi176-dotcom/bridgecall-assessment/actions/workflows/tests.yml/badge.svg)](https://github.com/Mansi176-dotcom/bridgecall-assessment/actions/workflows/tests.yml)
 
-[Reviewer guide](docs/REVIEW_GUIDE.md) · [Screenshots](docs/SCREENSHOTS.md) · [Test results](evidence/RESULTS.md) · [Architecture](docs/ARCHITECTURE.md)
+[Submission index](SUBMISSION.md) · [Reviewer guide](docs/REVIEW_GUIDE.md) · [Screenshots](docs/SCREENSHOTS.md) · [Test results](evidence/RESULTS.md) · [Architecture](docs/ARCHITECTURE.md)
 
 ![Bridgecall interface](docs/screenshots/00-overview.png)
 

@@ -1,5 +1,7 @@
 # Submission checklist
 
+For the reviewer-facing overview, see the [submission index](../SUBMISSION.md).
+
 **The current package is not yet a complete assessment submission.** Code, documentation, synthetic inputs, and text evaluations are included. The required recorded evidence, account-backed ASR checks, still need to be completed. The repository, screenshots, documentation, and checked-in results are publicly accessible.
 
 ## What is already included

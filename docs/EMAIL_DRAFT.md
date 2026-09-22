@@ -1,28 +1,28 @@
-# Copy-paste email
+# Submission email
 
-Reply in the original assessment email thread and keep its subject. This wording describes the package as it exists, including the outstanding audio evidence.
+Reply in the original assessment thread and keep the existing subject. This email accurately describes the current implementation; it does not claim completion of the missing audio evidence.
 
 ---
 
 Hi Team,
 
-Thank you for the opportunity. I’m sharing Bridgecall, my AI Engineer assessment implementation, for your review.
+Thank you for the opportunity. Please find my AI Engineer assessment implementation, **Bridgecall**, below.
 
-**Public GitHub repository:** https://github.com/Mansi176-dotcom/bridgecall-assessment
+**Public repository:** https://github.com/Mansi176-dotcom/bridgecall-assessment
 
-**Reviewer guide:** https://github.com/Mansi176-dotcom/bridgecall-assessment/blob/main/docs/REVIEW_GUIDE.md
+**Submission guide:** https://github.com/Mansi176-dotcom/bridgecall-assessment/blob/main/SUBMISSION.md
 
-**Application screenshots:** https://github.com/Mansi176-dotcom/bridgecall-assessment/blob/main/docs/SCREENSHOTS.md
+**Screenshots:** https://github.com/Mansi176-dotcom/bridgecall-assessment/blob/main/docs/SCREENSHOTS.md
 
 **Test results:** https://github.com/Mansi176-dotcom/bridgecall-assessment/blob/main/evidence/RESULTS.md
 
-The repository includes the source code, setup instructions, environment-variable template, architecture, knowledge-base records, localized Philippine and Indonesian flows, coaching logic, and documented limitations.
+The repository contains the implementation, setup instructions, architecture, traceable knowledge base, Philippine and Indonesian conversation flows, and live-coaching pipeline code. Supported business answers include source references, while unsupported questions receive an explicit fallback.
 
-A key design choice is to attach a source reference to supported business answers and explicitly fall back when verified information is unavailable. The current checks pass: 27 automated tests, 14 retrieval/abstention cases, and 20 nudge cases. These are text-based regression tests; the screenshots show actual application outputs.
+Validation includes 27 automated tests, 14 retrieval/abstention cases, and 20 nudge cases. These are text-based regression checks, with seven screenshots showing actual application behavior.
 
-This version does not include the required call recordings, walkthrough video, native-speaker/regional-accent evaluation, or provider-backed live-audio measurements. Those gaps are documented in the reviewer guide. The business data is fictional, and the callback action is a local mock.
+The required call recordings, walkthrough video, native-speaker/regional-accent evaluation, and provider-backed live-audio measurements are not included in this version. These outstanding items and other limitations are documented in the submission guide. The business data is fictional, and the callback action is a local mock.
 
-The repository and supporting links are public. I would be happy to walk through the implementation and discuss the design decisions.
+All links above are public and have been checked. I would be happy to explain the implementation and discuss the design choices.
 
 Best regards,
 Mansi Birhman
