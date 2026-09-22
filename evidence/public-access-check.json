@@ -1,0 +1,85 @@
+{
+  "checked_at_utc": "2026-09-22T18:59:30.927974+00:00",
+  "scope": "Public repository, email-linked documents, architecture, and all seven screenshots; audio/video links do not exist and are not claimed checked.",
+  "results": [
+    {
+      "url": "https://github.com/Mansi176-dotcom/bridgecall-assessment",
+      "status": 200,
+      "bytes": 294868,
+      "authentication": "none"
+    },
+    {
+      "url": "https://github.com/Mansi176-dotcom/bridgecall-assessment/blob/main/docs/REVIEW_GUIDE.md",
+      "status": 200,
+      "bytes": 264142,
+      "authentication": "none"
+    },
+    {
+      "url": "https://github.com/Mansi176-dotcom/bridgecall-assessment/blob/main/docs/SCREENSHOTS.md",
+      "status": 200,
+      "bytes": 260434,
+      "authentication": "none"
+    },
+    {
+      "url": "https://github.com/Mansi176-dotcom/bridgecall-assessment/blob/main/evidence/RESULTS.md",
+      "status": 200,
+      "bytes": 243094,
+      "authentication": "none"
+    },
+    {
+      "url": "https://github.com/Mansi176-dotcom/bridgecall-assessment/blob/main/docs/ARCHITECTURE.md",
+      "status": 200,
+      "bytes": 265341,
+      "authentication": "none"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Mansi176-dotcom/bridgecall-assessment/main/docs/screenshots/00-overview.png",
+      "status": 200,
+      "bytes": 66864,
+      "authentication": "none",
+      "matches_local_screenshot": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Mansi176-dotcom/bridgecall-assessment/main/docs/screenshots/01-grounded-answer.png",
+      "status": 200,
+      "bytes": 79998,
+      "authentication": "none",
+      "matches_local_screenshot": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Mansi176-dotcom/bridgecall-assessment/main/docs/screenshots/02-knowledge-retrieval.png",
+      "status": 200,
+      "bytes": 70309,
+      "authentication": "none",
+      "matches_local_screenshot": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Mansi176-dotcom/bridgecall-assessment/main/docs/screenshots/03-coaching-text-test.png",
+      "status": 200,
+      "bytes": 76285,
+      "authentication": "none",
+      "matches_local_screenshot": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Mansi176-dotcom/bridgecall-assessment/main/docs/screenshots/04-filipino-taglish.png",
+      "status": 200,
+      "bytes": 79520,
+      "authentication": "none",
+      "matches_local_screenshot": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Mansi176-dotcom/bridgecall-assessment/main/docs/screenshots/05-indonesian.png",
+      "status": 200,
+      "bytes": 82311,
+      "authentication": "none",
+      "matches_local_screenshot": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Mansi176-dotcom/bridgecall-assessment/main/docs/screenshots/06-unsupported-question.png",
+      "status": 200,
+      "bytes": 81396,
+      "authentication": "none",
+      "matches_local_screenshot": true
+    }
+  ]
+}
