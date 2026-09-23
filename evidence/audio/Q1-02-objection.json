@@ -1,0 +1,169 @@
+{
+  "summary": {
+    "id": "Q1-02-objection",
+    "evidence_type": "synthetic_audio_loop_not_human_call",
+    "language": "en-PH",
+    "final_state": "done",
+    "expected_final_state": "done",
+    "flow_verdict": "pass",
+    "reference_words": 21,
+    "word_errors": 4,
+    "wer": 0.19047619047619047,
+    "duration_s": 103.07,
+    "recording": "Q1-02-objection.mp3",
+    "asr_model": "faster-whisper/base CPU int8 beam_size=1",
+    "tts": "gTTS 2.5.4, language en",
+    "native_speaker_review": false
+  },
+  "events": [
+    {
+      "speaker": "assistant",
+      "start_s": 0.0,
+      "end_s": 15.504,
+      "text": "Hello, I’m the Bridgecall automated demo assistant for fictional Harbor Life. This is a simulation, not insurance advice or an offer. May I ask a few screening questions? Please say yes or no."
+    },
+    {
+      "speaker": "customer",
+      "start_s": 15.804,
+      "end_s": 16.764,
+      "text": "yes",
+      "reference": "yes",
+      "asr": "Yes.",
+      "asr_ms": 524.6033330913633
+    },
+    {
+      "speaker": "assistant",
+      "start_s": 17.064,
+      "end_s": 21.864,
+      "text": "What is your age in years? Please use digits when typing.",
+      "state": "age",
+      "citation": null,
+      "action": null
+    },
+    {
+      "speaker": "customer",
+      "start_s": 22.164,
+      "end_s": 24.228,
+      "text": "The premium is expensive",
+      "reference": "The premium is expensive",
+      "asr": "The premium is expensive.",
+      "asr_ms": 2695.1632909476757
+    },
+    {
+      "speaker": "assistant",
+      "start_s": 24.528,
+      "end_s": 42.816,
+      "text": "If the premium feels expensive, offer an adviser callback to discuss the customer’s budget. Do not invent a discount, reduce cover without consent, or promise acceptance. What is your age in years? Please use digits when typing.",
+      "state": "age",
+      "citation": {
+        "record_id": "ph-budget-en-PH",
+        "source": "data/raw/business.json#/4/answers/en-PH",
+        "version": "1.0",
+        "content_sha256": "fae59bef0d7f8c12f4bf1b4d6379f16e18485057db98d962d5ca2c6a39237fd0",
+        "score": 3.4365
+      },
+      "action": null
+    },
+    {
+      "speaker": "customer",
+      "start_s": 43.116,
+      "end_s": 46.164,
+      "text": "Does coverage include cancer surgery?",
+      "reference": "Does coverage include cancer surgery?",
+      "asr": "Does coverage include cancer surgery?",
+      "asr_ms": 2814.9896250106394
+    },
+    {
+      "speaker": "assistant",
+      "start_s": 46.464,
+      "end_s": 54.216,
+      "text": "I don’t have verified information for that question. I can record a mock request for adviser assistance.",
+      "state": "age",
+      "citation": null,
+      "action": null
+    },
+    {
+      "speaker": "customer",
+      "start_s": 54.516,
+      "end_s": 56.028,
+      "text": "I want a human",
+      "reference": "I want a human",
+      "asr": "I want a human.",
+      "asr_ms": 2122.319957939908
+    },
+    {
+      "speaker": "assistant",
+      "start_s": 56.328,
+      "end_s": 67.368,
+      "text": "I can record a mock request for a human adviser. This demo cannot connect you to a real person. May I record the request? Say yes or no.",
+      "state": "consent",
+      "citation": null,
+      "action": null
+    },
+    {
+      "speaker": "customer",
+      "start_s": 67.668,
+      "end_s": 68.628,
+      "text": "yes",
+      "reference": "yes",
+      "asr": "Yes.",
+      "asr_ms": 2141.6044998914003
+    },
+    {
+      "speaker": "assistant",
+      "start_s": 68.928,
+      "end_s": 79.008,
+      "text": "What local date and time would you prefer for the callback? Include a date and time, for example 25 September at 3 pm.",
+      "state": "time",
+      "citation": null,
+      "action": null
+    },
+    {
+      "speaker": "customer",
+      "start_s": 79.308,
+      "end_s": 82.572,
+      "text": "25 September at 4 pm",
+      "reference": "25 September at 4 pm",
+      "asr": "25th of September at 4pm.",
+      "asr_ms": 2272.8013331070542
+    },
+    {
+      "speaker": "assistant",
+      "start_s": 82.872,
+      "end_s": 93.264,
+      "text": "Please confirm: 25th of September at 4pm., local time. Create this mock callback request? Say yes or no.",
+      "state": "confirm",
+      "citation": null,
+      "action": null
+    },
+    {
+      "speaker": "customer",
+      "start_s": 93.564,
+      "end_s": 94.524,
+      "text": "yes",
+      "reference": "yes",
+      "asr": "Yes.",
+      "asr_ms": 4206.189332995564
+    },
+    {
+      "speaker": "assistant",
+      "start_s": 94.824,
+      "end_s": 102.768,
+      "text": "Your mock callback request is saved locally. No real appointment is booked and no adviser has been contacted.",
+      "state": "done",
+      "citation": null,
+      "action": {
+        "id": "a82633dd-b6ea-4af9-aa8f-71b73e2db6e1",
+        "type": "mock_callback",
+        "market": "PH",
+        "language": "en-PH",
+        "slots": {
+          "reason": "human_request",
+          "callback_consent": true,
+          "callback_time": "25th of September at 4pm."
+        },
+        "status": "local_only"
+      }
+    }
+  ]
+}

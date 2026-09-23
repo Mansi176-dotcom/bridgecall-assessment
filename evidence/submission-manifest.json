@@ -1,71 +1,80 @@
 {
-  "status": "public_implementation_audio_evidence_pending",
+  "status": "audio_evidence_published_human_validation_pending",
   "repository_url": "https://github.com/Mansi176-dotcom/bridgecall-assessment",
-  "walkthrough_url": "",
-  "live_demo_recording_url": "",
-  "live_metrics_url": "",
-  "asr_report_url": "",
+  "walkthrough_url": "https://raw.githubusercontent.com/Mansi176-dotcom/bridgecall-assessment/main/evidence/video/walkthrough.mp4",
+  "live_demo_recording_url": "https://raw.githubusercontent.com/Mansi176-dotcom/bridgecall-assessment/main/evidence/video/live-demo.mp4",
+  "live_metrics_url": "https://github.com/Mansi176-dotcom/bridgecall-assessment/blob/main/evidence/live-latency-summary.json",
+  "asr_report_url": "https://github.com/Mansi176-dotcom/bridgecall-assessment/blob/main/docs/AUDIO_EVIDENCE.md",
   "links_checked_signed_out": false,
   "calls": [
     {
       "id": "Q1-01",
-      "recording_url": "",
-      "transcript_url": "",
-      "result": "pending",
+      "recording_url": "https://raw.githubusercontent.com/Mansi176-dotcom/bridgecall-assessment/main/evidence/audio/Q1-01-cooperative.mp3",
+      "transcript_url": "https://github.com/Mansi176-dotcom/bridgecall-assessment/blob/main/evidence/audio/Q1-01-cooperative.json",
+      "result": "pass",
       "requires_regional_accent": false,
-      "accent_observations": ""
+      "accent_observations": "",
+      "evidence_type": "synthetic_audio_loop_not_human_call"
     },
     {
       "id": "Q1-02",
-      "recording_url": "",
-      "transcript_url": "",
-      "result": "pending",
+      "recording_url": "https://raw.githubusercontent.com/Mansi176-dotcom/bridgecall-assessment/main/evidence/audio/Q1-02-objection.mp3",
+      "transcript_url": "https://github.com/Mansi176-dotcom/bridgecall-assessment/blob/main/evidence/audio/Q1-02-objection.json",
+      "result": "pass",
       "requires_regional_accent": false,
-      "accent_observations": ""
+      "accent_observations": "",
+      "evidence_type": "synthetic_audio_loop_not_human_call"
     },
     {
       "id": "Q1-03",
-      "recording_url": "",
-      "transcript_url": "",
-      "result": "pending",
+      "recording_url": "https://raw.githubusercontent.com/Mansi176-dotcom/bridgecall-assessment/main/evidence/audio/Q1-03-conflict.mp3",
+      "transcript_url": "https://github.com/Mansi176-dotcom/bridgecall-assessment/blob/main/evidence/audio/Q1-03-conflict.json",
+      "result": "pass",
       "requires_regional_accent": false,
-      "accent_observations": ""
+      "accent_observations": "",
+      "evidence_type": "synthetic_audio_loop_not_human_call"
     },
     {
       "id": "Q3-PH-01",
-      "recording_url": "",
-      "transcript_url": "",
-      "result": "pending",
+      "recording_url": "https://raw.githubusercontent.com/Mansi176-dotcom/bridgecall-assessment/main/evidence/audio/Q3-PH-01-taglish.mp3",
+      "transcript_url": "https://github.com/Mansi176-dotcom/bridgecall-assessment/blob/main/evidence/audio/Q3-PH-01-taglish.json",
+      "result": "partial",
       "requires_regional_accent": false,
-      "accent_observations": ""
+      "accent_observations": "",
+      "evidence_type": "synthetic_audio_loop_not_human_call"
     },
     {
       "id": "Q3-PH-02",
-      "recording_url": "",
-      "transcript_url": "",
-      "result": "pending",
+      "recording_url": "https://raw.githubusercontent.com/Mansi176-dotcom/bridgecall-assessment/main/evidence/audio/Q3-PH-02-human.mp3",
+      "transcript_url": "https://github.com/Mansi176-dotcom/bridgecall-assessment/blob/main/evidence/audio/Q3-PH-02-human.json",
+      "result": "partial",
       "requires_regional_accent": false,
-      "accent_observations": ""
+      "accent_observations": "",
+      "evidence_type": "synthetic_audio_loop_not_human_call"
     },
     {
       "id": "Q3-ID-01",
-      "recording_url": "",
-      "transcript_url": "",
-      "result": "pending",
+      "recording_url": "https://raw.githubusercontent.com/Mansi176-dotcom/bridgecall-assessment/main/evidence/audio/Q3-ID-01-formal.mp3",
+      "transcript_url": "https://github.com/Mansi176-dotcom/bridgecall-assessment/blob/main/evidence/audio/Q3-ID-01-formal.json",
+      "result": "partial",
       "requires_regional_accent": false,
-      "accent_observations": ""
+      "accent_observations": "",
+      "evidence_type": "synthetic_audio_loop_not_human_call"
     },
     {
       "id": "Q3-ID-02",
-      "recording_url": "",
-      "transcript_url": "",
-      "result": "pending",
+      "recording_url": "https://raw.githubusercontent.com/Mansi176-dotcom/bridgecall-assessment/main/evidence/audio/Q3-ID-02-colloquial.mp3",
+      "transcript_url": "https://github.com/Mansi176-dotcom/bridgecall-assessment/blob/main/evidence/audio/Q3-ID-02-colloquial.json",
+      "result": "partial",
       "requires_regional_accent": true,
-      "accent_observations": ""
+      "accent_observations": "Separate real human Javanese news-corpus playback in evidence/regional-accent-results.json; not an interactive accent call.",
+      "evidence_type": "synthetic_audio_loop_not_human_call"
     }
   ],
   "repository_visibility": "public",
   "screenshots_url": "https://github.com/Mansi176-dotcom/bridgecall-assessment/blob/main/docs/SCREENSHOTS.md",
   "reviewer_guide_url": "https://github.com/Mansi176-dotcom/bridgecall-assessment/blob/main/docs/REVIEW_GUIDE.md",
-  "code_links_checked_without_authentication": true
+  "code_links_checked_without_authentication": true,
+  "human_call_validation": false,
+  "native_speaker_review": false
 }

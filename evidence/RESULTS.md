@@ -7,8 +7,8 @@ These results come from authored text fixtures. No recordings or ASR quality cla
 | Retrieval + abstention | 14/14 |
 | Nudge fixture checks | 20/20 |
 | Nudge TP / FP / TN / FN | 10 / 0 / 10 / 0 |
-| Signal-only latency P50 / P95 | 0.020 / 0.395 ms |
-| Audio → display P50 / P95 | Not measured; run live audio |
+| Signal-only latency P50 / P95 | 0.020 / 0.383 ms |
+| Audio → display P50 / P95 | See separate live-latency-summary.json (actual replay) |
 
 ## Retrieval cases
 

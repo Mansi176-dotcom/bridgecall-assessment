@@ -1,28 +1,28 @@
 # Submission email
 
-Reply in the original assessment thread and keep the existing subject. This email accurately describes the current implementation; it does not claim completion of the missing audio evidence.
+Reply in the original email thread, keeping its subject.
 
 ---
 
 Hi Team,
 
-Thank you for the opportunity. Please find my AI Engineer assessment implementation, **Bridgecall**, below.
+Thank you for the opportunity. Please find my AI Engineer assessment project, Bridgecall, below.
 
-**Public repository:** https://github.com/Mansi176-dotcom/bridgecall-assessment
+Public repository: https://github.com/Mansi176-dotcom/bridgecall-assessment
 
-**Submission guide:** https://github.com/Mansi176-dotcom/bridgecall-assessment/blob/main/SUBMISSION.md
+Submission guide: https://github.com/Mansi176-dotcom/bridgecall-assessment/blob/main/SUBMISSION.md
 
-**Screenshots:** https://github.com/Mansi176-dotcom/bridgecall-assessment/blob/main/docs/SCREENSHOTS.md
+Recordings, walkthrough and audio results: https://github.com/Mansi176-dotcom/bridgecall-assessment/blob/main/docs/AUDIO_EVIDENCE.md
 
-**Test results:** https://github.com/Mansi176-dotcom/bridgecall-assessment/blob/main/evidence/RESULTS.md
+Screenshots: https://github.com/Mansi176-dotcom/bridgecall-assessment/blob/main/docs/SCREENSHOTS.md
 
-The repository contains the implementation, setup instructions, architecture, traceable knowledge base, Philippine and Indonesian conversation flows, and live-coaching pipeline code. Supported business answers include source references, while unsupported questions receive an explicit fallback.
+Bridgecall combines source-cited answers, Philippine and Indonesian conversation flows, and live call coaching. The repository includes setup instructions, architecture, reproducible tests, and documented limitations.
 
-Validation includes 27 automated tests, 14 retrieval/abstention cases, and 20 nudge cases. These are text-based regression checks, with seven screenshots showing actual application behavior.
+Validation includes 29 passing unit tests, recorded audio tests, and a real-time replay that displayed nudges during the audio, with measured P50/P95 latency of 4.91/8.73 seconds across 10 windows. The evidence also shows an Indonesian timezone-parsing failure, the fix, and the rerun.
 
-The required call recordings, walkthrough video, native-speaker/regional-accent evaluation, and provider-backed live-audio measurements are not included in this version. These outstanding items and other limitations are documented in the submission guide. The business data is fictional, and the callback action is a local mock.
+The dialogue recordings and walkthrough narration are synthetic. The regional-accent ASR test uses published human Indonesian speech; interactive human calls and native-speaker review remain outstanding. These distinctions and the observed recognition failures are documented in the audio report.
 
-All links above are public and have been checked. I would be happy to explain the implementation and discuss the design choices.
+Thank you for reviewing my submission. I would welcome the opportunity to discuss the design choices and next steps.
 
 Best regards,
 Mansi Birhman

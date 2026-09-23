@@ -11,11 +11,11 @@ Bridgecall is a local assessment prototype for Philippine life-insurance screeni
 
 The useful part is inspectable: an answer carries a source record; a coaching nudge carries the phrase that triggered it; missing policy information produces a fallback.
 
-**Current status:** runnable local implementation with passing text regression checks. Real call recordings, native-speaker/accent testing, provider-backed live-audio latency, and a walkthrough video are still required before submission. See [submission checklist](docs/SUBMISSION.md). Fictional business data is used because no actual business script or source pack was provided.
+**Current status:** runnable prototype with 29 passing unit tests, seven synthetic audio dialogues, two corrected Indonesian reruns, a recorded real-time audio replay with measured latency, and a small real-human Indonesian accent corpus test. [Watch/read the audio evidence](docs/AUDIO_EVIDENCE.md). Human interactive calls and native-speaker review remain outstanding. Business data is fictional.
 
 **Public repository:** https://github.com/Mansi176-dotcom/bridgecall-assessment
 
-Screenshots are actual captures of the locally running application using typed inputs. They do not substitute for recorded calls or live-audio measurements.
+Screenshots are actual application captures. The gallery now includes a nudge displayed during the recorded audio replay.
 
 ## Run locally
 
@@ -34,6 +34,19 @@ Open **http://localhost:8765**. Keep the terminal running. The local URL is for 
 3. Choose Filipino/Taglish or Bahasa Indonesia and start a new call. **Speak one turn** uses browser ASR; responses use an installed language-matched TTS voice when available.
 4. In **Knowledge explorer**, retrieve `What happens if I miss a premium?` and inspect the record, source, version, and hash.
 5. In **Live insights**, run a text check with `I have a second vehicle`. This validates nudge logic only. The live microphone mode below is the audio pipeline.
+
+## Replay the measured audio demo locally
+
+Use Python 3.10+ for the optional local speech dependencies (tested on Python 3.12).
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements-audio.txt
+ASR_PROVIDER=local LOCAL_ASR_MODEL=base python3 -m app.server
+```
+
+The first transcription downloads the multilingual Whisper base model. Open **Live insights → Run 40-second audio demo**. It plays the checked-in synthetic WAV in real time, transcribes each window, and displays measured nudges. Internet is required for the initial model download. No API key is required for this mode. See [audio results and reproduction](docs/AUDIO_EVIDENCE.md).
 
 ## Enable live audio
 
@@ -57,7 +70,7 @@ python3 -m scripts.evaluate
 python3 -m scripts.check_submission
 ```
 
-The last command intentionally fails until real media and sharing links are supplied. The first two produce/check local evidence without an API key.
+The last command intentionally flags remaining human-call and native-review requirements. The first two produce/check local evidence without an API key.
 
 | Evidence | Result | Scope |
 |---|---|---|

@@ -43,3 +43,10 @@ A denda question returns the Indonesian policy record without inventing a fee.
 An unsupported medical-coverage question receives an explicit unavailable-information response.
 
 ![Unsupported-question fallback](screenshots/06-unsupported-question.png)
+
+
+## Live audio replay — actual ASR and nudges
+
+![Nudges displayed during real-time audio replay](screenshots/08-live-audio.png)
+
+Captured mid-run after four processed windows; the partial-run percentile display differs from the final ten-window result. [Video and complete measurements](AUDIO_EVIDENCE.md).

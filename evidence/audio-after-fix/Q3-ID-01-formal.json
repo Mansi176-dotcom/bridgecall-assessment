@@ -1,0 +1,132 @@
+{
+  "summary": {
+    "id": "Q3-ID-01-formal",
+    "evidence_type": "synthetic_audio_loop_not_human_call",
+    "language": "id-ID",
+    "final_state": "done",
+    "expected_final_state": "done",
+    "flow_verdict": "pass",
+    "reference_words": 12,
+    "word_errors": 5,
+    "wer": 0.4166666666666667,
+    "duration_s": 95.22,
+    "recording": "Q3-ID-01-formal.mp3",
+    "asr_model": "faster-whisper/base CPU int8 beam_size=1",
+    "tts": "gTTS 2.5.4, language id",
+    "native_speaker_review": false
+  },
+  "events": [
+    {
+      "speaker": "assistant",
+      "start_s": 0.0,
+      "end_s": 18.072,
+      "text": "Selamat pagi atau siang, Bapak/Ibu. Saya asisten demo otomatis Bridgecall untuk Nusantara Finance fiktif. Ini simulasi, bukan penawaran pembiayaan. Boleh saya lanjutkan? Jawab ya atau tidak."
+    },
+    {
+      "speaker": "customer",
+      "start_s": 18.372,
+      "end_s": 19.14,
+      "text": "ya",
+      "reference": "ya",
+      "asr": "Ya",
+      "asr_ms": 573.294207919389
+    },
+    {
+      "speaker": "assistant",
+      "start_s": 19.44,
+      "end_s": 29.376,
+      "text": "Boleh saya mencatat permintaan callback untuk petugas dalam demo? Jawab ya atau tidak. Belum ada petugas yang dihubungi.",
+      "state": "consent",
+      "citation": null,
+      "action": null
+    },
+    {
+      "speaker": "customer",
+      "start_s": 29.676,
+      "end_s": 31.836,
+      "text": "Berapa denda kalau telat?",
+      "reference": "Berapa denda kalau telat?",
+      "asr": "Berapa denda kalau telah?",
+      "asr_ms": 667.8789579309523
+    },
+    {
+      "speaker": "assistant",
+      "start_s": 32.136,
+      "end_s": 57.072,
+      "text": "Denda mengikuti kontrak pembiayaan yang berlaku. Demo ini tidak memiliki tarif denda terverifikasi. Saya bisa mencatat permintaan bantuan petugas, tanpa menjanjikan penghapusan denda. Boleh saya mencatat permintaan callback untuk petugas dalam demo? Jawab ya atau tidak. Belum ada petugas yang dihubungi.",
+      "state": "consent",
+      "citation": {
+        "record_id": "id-penalty-id-ID",
+        "source": "data/raw/business.json#/10/answers/id-ID",
+        "version": "1.0",
+        "content_sha256": "04e212d4a37a46723c7c037cd1dc4e53ebdd859b0305c996bf9a7cff0c9ddfaa",
+        "score": 1.998
+      },
+      "action": null
+    },
+    {
+      "speaker": "customer",
+      "start_s": 57.372,
+      "end_s": 58.14,
+      "text": "ya",
+      "reference": "ya",
+      "asr": "Ya",
+      "asr_ms": 563.8111250009388
+    },
+    {
+      "speaker": "assistant",
+      "start_s": 58.44,
+      "end_s": 66.384,
+      "text": "Tanggal dan jam berapa Bapak/Ibu ingin ditelepon? Sebutkan juga WIB, WITA, atau WIT.",
+      "state": "time",
+      "citation": null,
+      "action": null
+    },
+    {
+      "speaker": "customer",
+      "start_s": 66.684,
+      "end_s": 71.844,
+      "text": "25 September jam 10 WIB",
+      "reference": "25 September jam 10 WIB",
+      "asr": "Tanggal 25 September jam 10 waktu Indonesia Barat.",
+      "asr_ms": 497.30316596105695
+    },
+    {
+      "speaker": "assistant",
+      "start_s": 72.144,
+      "end_s": 84.384,
+      "text": "Mohon konfirmasi: Tanggal 25 September jam 10 waktu Indonesia Barat.. Simpan permintaan callback demo ini? Jawab ya atau tidak.",
+      "state": "confirm",
+      "citation": null,
+      "action": null
+    },
+    {
+      "speaker": "customer",
+      "start_s": 84.684,
+      "end_s": 85.452,
+      "text": "ya",
+      "reference": "ya",
+      "asr": "Ya",
+      "asr_ms": 866.6791669093072
+    },
+    {
+      "speaker": "assistant",
+      "start_s": 85.752,
+      "end_s": 94.92,
+      "text": "Permintaan callback demo sudah disimpan secara lokal. Ini belum menjadi jadwal resmi dan belum ada petugas yang dihubungi.",
+      "state": "done",
+      "citation": null,
+      "action": {
+        "id": "8c2f26c0-f213-4636-ab98-615a2c147c45",
+        "type": "mock_callback",
+        "market": "ID",
+        "language": "id-ID",
+        "slots": {
+          "callback_consent": true,
+          "callback_time": "Tanggal 25 September jam 10 waktu Indonesia Barat."
+        },
+        "status": "local_only"
+      }
+    }
+  ]
+}

@@ -247,7 +247,7 @@ def main():
         f"| Nudge fixture checks | {summary['nudge_pass']}/{len(nudge)} |",
         f"| Nudge TP / FP / TN / FN | {tp} / {fp} / {tn} / {fn} |",
         f"| Signal-only latency P50 / P95 | {summary['text_signal_latency_ms']['p50']:.3f} / {summary['text_signal_latency_ms']['p95']:.3f} ms |",
-        "| Audio → display P50 / P95 | Not measured; run live audio |",
+        "| Audio → display P50 / P95 | See separate live-latency-summary.json (actual replay) |",
         "",
         "## Retrieval cases",
         "",

@@ -597,3 +597,43 @@ fetch("/api/config")
       log("Live ASR is not configured. Text checks are available.");
   })
   .catch(err);
+
+
+$("replay").onclick = async () => {
+  let replayContext, player;
+  try {
+    if (live || processing) throw Error("Finish the current audio session first.");
+    if (!config.asr_configured) throw Error("Configure local ASR or the provider key first.");
+    if (locale() !== "en-PH") throw Error("Choose Philippines English in Voice desk for this English fixture.");
+    const manifest = await (await fetch("/demo/stream.json")).json();
+    const audio = await (await fetch("/demo/stream.wav")).arrayBuffer();
+    replayContext = new AudioContext();
+    await replayContext.resume();
+    const decoded = await replayContext.decodeAudioData(audio);
+    const rate = decoded.sampleRate;
+    const pcm = decoded.getChannelData(0);
+    coach = null;
+    await coachSession();
+    activeNudges = []; metrics = []; observations = []; queue = [];
+    $("streamlog").replaceChildren(); renderNudges(); renderMetrics();
+    live = true; $("language").disabled = true; $("live").disabled = true; $("replay").disabled = true;
+    player = replayContext.createBufferSource(); player.buffer = decoded; player.connect(replayContext.destination);
+    const t0 = performance.now(); player.start();
+    $("livestate").textContent = "Real-time audio replay";
+    for (let i = 0; i < manifest.windows.length; i++) {
+      const end = (i + 1) * 4000;
+      $("replaystatus").textContent = `Playing window ${i+1}/${manifest.windows.length} · session ${coach}`;
+      await new Promise(resolve => setTimeout(resolve, Math.max(0, t0 + end - performance.now())));
+      const frame = pcm.slice(Math.round(i * 4 * rate), Math.round((i+1) * 4 * rate));
+      queue.push({blob:wavBlob([frame], rate),start:t0+i*4000,speaker:manifest.windows[i].speaker});
+      drain();
+    }
+    live = false;
+    while (processing) await new Promise(resolve => setTimeout(resolve, 100));
+    const evidence = {provider:config.provider, model:config.model, mode:"real_time_synthetic_audio_replay", duration_s:decoded.duration, observations, metrics, fixture:manifest};
+    $("replayreport").textContent = JSON.stringify(evidence,null,2);
+    await api("measurements",{session:coach,evidence});
+    $("replaystatus").textContent = `Replay complete · ${metrics.length} audio windows · session ${coach}`;
+  } catch (e) { err(e); }
+  finally { live=false; $("replay").disabled=false; $("language").disabled=false; $("live").disabled=!config.asr_configured; if(replayContext) await replayContext.close(); }
+};

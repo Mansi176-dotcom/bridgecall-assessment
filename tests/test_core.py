@@ -140,6 +140,23 @@ class AgentTests(unittest.TestCase):
         self.assertEqual(a.respond("besok jam 10 WIB")["state"], "confirm")
         self.assertIn("Maaf", a.respond("weather tomorrow")["assistant"])
 
+    def test_spoken_indonesian_timezone(self):
+        for zone in (
+            "waktu Indonesia Barat",
+            "waktu Indonesia Tengah",
+            "waktu Indonesia Timur",
+        ):
+            a = Agent(self.kb, "ID", "id-ID")
+            for turn in ("", "ya", "ya"):
+                a.respond(turn)
+            result = a.respond("Tanggal 25 September jam 10 " + zone)
+            self.assertEqual(result["state"], "confirm")
+            self.assertIsNone(result["action"])
+
+    def test_ambiguous_asr_is_not_consent(self):
+        self.assertEqual(self.a.respond("Oh!")["state"], "permission")
+        self.assertIsNone(self.a.action)
+
     def test_no_duplicate_callback(self):
         for t in ("yes", "28", "yes", "yes", "25 September at 3 pm", "yes"):
             self.a.respond(t)

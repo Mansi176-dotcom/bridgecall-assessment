@@ -7,3 +7,8 @@ __pycache__/
 .DS_Store
 recordings/
 private-evidence/
+
+.model-cache/
+
+.media-cache/
+.venv/

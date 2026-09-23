@@ -1,0 +1,97 @@
+{
+  "evidence_type": "synthetic_audio_fixture",
+  "tts": "gTTS 2.5.4 / Google Translate speech, en; not a human voice recording",
+  "window_seconds": 4,
+  "windows": [
+    {
+      "index": 0,
+      "start_s": 0,
+      "end_s": 4,
+      "speaker": "agent",
+      "reference": "What is your age?",
+      "expected_rule": "missing_disclosure",
+      "note": "Synthetic speech"
+    },
+    {
+      "index": 1,
+      "start_s": 4,
+      "end_s": 8,
+      "speaker": "agent",
+      "reference": "This is an automated demo.",
+      "expected_rule": null,
+      "note": "Synthetic speech"
+    },
+    {
+      "index": 2,
+      "start_s": 8,
+      "end_s": 12,
+      "speaker": "agent",
+      "reference": "You will get guaranteed approval.",
+      "expected_rule": "risky_promise",
+      "note": "Synthetic speech"
+    },
+    {
+      "index": 3,
+      "start_s": 12,
+      "end_s": 16,
+      "speaker": "customer",
+      "reference": "I have a second vehicle.",
+      "expected_rule": "cross_sell",
+      "note": "Synthetic speech"
+    },
+    {
+      "index": 4,
+      "start_s": 16,
+      "end_s": 20,
+      "speaker": "customer",
+      "reference": "I have a second vehicle.",
+      "expected_rule": null,
+      "note": "Cooldown duplicate"
+    },
+    {
+      "index": 5,
+      "start_s": 20,
+      "end_s": 24,
+      "speaker": "customer",
+      "reference": "I am frustrated. This is the third time.",
+      "expected_rule": "frustration",
+      "note": "Synthetic speech"
+    },
+    {
+      "index": 6,
+      "start_s": 24,
+      "end_s": 28,
+      "speaker": "customer",
+      "reference": "I cannot pay this month.",
+      "expected_rule": "payment_difficulty",
+      "note": "Synthetic speech"
+    },
+    {
+      "index": 7,
+      "start_s": 28,
+      "end_s": 32,
+      "speaker": "customer",
+      "reference": "Please call me tomorrow.",
+      "expected_rule": "callback",
+      "note": "Synthetic speech"
+    },
+    {
+      "index": 8,
+      "start_s": 32,
+      "end_s": 36,
+      "speaker": "customer",
+      "reference": "Thank you for explaining.",
+      "expected_rule": null,
+      "note": "Synthetic speech"
+    },
+    {
+      "index": 9,
+      "start_s": 36,
+      "end_s": 40,
+      "speaker": "customer",
+      "reference": "",
+      "expected_rule": null,
+      "note": "Seeded non-speech noise"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:07.400
+Bridgecall connects a reviewed knowledge base, localized conversation flows, and live coaching. This
+
+00:00:07.400 --> 00:00:14.800
+walkthrough uses synthetic narration. The application screenshots are actual captures. The evidence
+
+00:00:14.800 --> 00:00:22.200
+distinguishes generated audio, real time audio processing, and recordings of real people.
+
+00:00:22.800 --> 00:00:29.148
+One design choice is returning approved passages directly, instead of generating new financial
+
+00:00:29.148 --> 00:00:35.496
+product claims. Each supported answer has a source reference. Unsupported questions receive a
+
+00:00:35.496 --> 00:00:41.844
+fallback. A state machine keeps consent separate from qualification. This makes the prototype easy
+
+00:00:41.844 --> 00:00:48.192
+to inspect, with the tradeoff of narrow paraphrase handling.
+
+00:00:48.792 --> 00:00:55.638
+Audio testing found a concrete failure. The recognizer expanded W I B into waktu Indonesia Barat.
+
+00:00:55.638 --> 00:01:02.484
+The callback parser accepted the abbreviation but rejected the spoken phrase. The parser now accepts
+
+00:01:02.484 --> 00:01:09.330
+the three spoken Indonesian timezone names. Regression tests check that confirmation is still
+
+00:01:09.330 --> 00:01:16.176
+required. Original failed audio and corrected reruns are both retained.
+
+00:01:16.776 --> 00:01:23.790
+The companion live demo plays synthetic speech at real time speed. Every four second window passes
+
+00:01:23.790 --> 00:01:30.804
+through local Whisper before the browser displays a nudge. End to end latency was four point nine
+
+00:01:30.804 --> 00:01:37.818
+one seconds at the median, and eight point seven three seconds at the ninety fifth percentile, over
+
+00:01:37.818 --> 00:01:44.832
+ten windows. The capture interval is included. No language model is used for the nudge rules.
+
+00:01:45.432 --> 00:01:51.828
+Five expected signals were detected, one was missed, and four negative windows produced no alert.
+
+00:01:51.828 --> 00:01:58.224
+The missed signal came from hearing cannot pay as cannot be. Short Filipino consent words were also
+
+00:01:58.224 --> 00:02:04.620
+unreliable. The system keeps ambiguous speech out of the consent path. These are small authored
+
+00:02:04.620 --> 00:02:11.016
+tests, not claims of production accuracy.
+
+00:02:11.616 --> 00:02:17.525
+For a regional accent test, local Whisper transcribed published Indonesian news recordings: one
+
+00:02:17.525 --> 00:02:23.434
+Javanese accented speaker and one standard speaker, reading three matched sentences each. Word error
+
+00:02:23.434 --> 00:02:29.342
+rates were twenty eight point six and thirty two point one percent. This tiny sample cannot
+
+00:02:29.342 --> 00:02:35.251
+establish an accent ranking. The report links the original source and does not redistribute its
+
+00:02:35.251 --> 00:02:41.160
+recordings.
+
+00:02:41.760 --> 00:02:48.882
+Start with the audio evidence report in the repository. It links seven synthetic dialogue
+
+00:02:48.882 --> 00:02:56.004
+recordings, the corrected Indonesian reruns, the live screen capture, and the regional accent
+
+00:02:56.004 --> 00:03:03.126
+results. Remaining work includes real interactive calls, native speaker review, stronger Filipino
+
+00:03:03.126 --> 00:03:10.248
+recognition, and deployment hardening. The business data is fictional and callbacks are local mocks.

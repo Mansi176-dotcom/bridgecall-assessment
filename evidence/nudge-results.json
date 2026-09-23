@@ -8,7 +8,7 @@
       "cross_sell"
     ],
     "pass": true,
-    "signal_ms": 1.4494999999999925
+    "signal_ms": 1.4288340000000037
   },
   {
     "speaker": "agent",
@@ -19,7 +19,7 @@
       "risky_promise"
     ],
     "pass": true,
-    "signal_ms": 0.3945840000000034
+    "signal_ms": 0.3825000000000009
   },
   {
     "speaker": "agent",
@@ -30,7 +30,7 @@
       "missing_disclosure"
     ],
     "pass": true,
-    "signal_ms": 0.0289170000000033
+    "signal_ms": 0.02645899999999951
   },
   {
     "speaker": "customer",
@@ -41,7 +41,7 @@
       "frustration"
     ],
     "pass": true,
-    "signal_ms": 0.030791000000002233
+    "signal_ms": 0.029541000000000983
   },
   {
     "speaker": "customer",
@@ -52,7 +52,7 @@
       "payment_difficulty"
     ],
     "pass": true,
-    "signal_ms": 0.025582999999995693
+    "signal_ms": 0.0232090000000032
   },
   {
     "speaker": "customer",
@@ -63,7 +63,7 @@
       "callback"
     ],
     "pass": true,
-    "signal_ms": 0.022582999999992692
+    "signal_ms": 0.022207999999995787
   },
   {
     "speaker": "customer",
@@ -74,7 +74,7 @@
       "buying_signal"
     ],
     "pass": true,
-    "signal_ms": 0.020583999999990166
+    "signal_ms": 0.020166000000002016
   },
   {
     "speaker": "customer",
@@ -85,7 +85,7 @@
       "payment_difficulty"
     ],
     "pass": true,
-    "signal_ms": 0.02016700000000149
+    "signal_ms": 0.01962499999999534
   },
   {
     "speaker": "customer",
@@ -96,7 +96,7 @@
       "cross_sell"
     ],
     "pass": true,
-    "signal_ms": 0.021541999999999395
+    "signal_ms": 0.021291999999999145
   },
   {
     "speaker": "customer",
@@ -107,7 +107,7 @@
       "frustration"
     ],
     "pass": true,
-    "signal_ms": 0.02012500000000972
+    "signal_ms": 0.019791999999997645
   },
   {
     "speaker": "customer",
@@ -116,7 +116,7 @@
     "expected": null,
     "actual": [],
     "pass": true,
-    "signal_ms": 0.002000000000002
+    "signal_ms": 0.0019580000000032904
   },
   {
     "speaker": "customer",
@@ -134,7 +134,7 @@
     "expected": null,
     "actual": [],
     "pass": true,
-    "signal_ms": 0.0027079999999901627
+    "signal_ms": 0.0026669999999978655
   },
   {
     "speaker": "agent",
@@ -143,7 +143,7 @@
     "expected": null,
     "actual": [],
     "pass": true,
-    "signal_ms": 0.02545900000000545
+    "signal_ms": 0.02462500000000034
   },
   {
     "speaker": "agent",
@@ -152,7 +152,7 @@
     "expected": null,
     "actual": [],
     "pass": true,
-    "signal_ms": 0.02479100000001011
+    "signal_ms": 0.024749999999996997
   },
   {
     "speaker": "customer",
@@ -161,7 +161,7 @@
     "expected": null,
     "actual": [],
     "pass": true,
-    "signal_ms": 0.015709000000002638
+    "signal_ms": 0.01533299999999932
   },
   {
     "speaker": "customer",
@@ -170,7 +170,7 @@
     "expected": null,
     "actual": [],
     "pass": true,
-    "signal_ms": 0.018749999999997935
+    "signal_ms": 0.01833300000000232
   },
   {
     "speaker": "customer",
@@ -179,7 +179,7 @@
     "expected": null,
     "actual": [],
     "pass": true,
-    "signal_ms": 0.01354099999999192
+    "signal_ms": 0.013499999999999623
   },
   {
     "speaker": "agent",
@@ -188,7 +188,7 @@
     "expected": null,
     "actual": [],
     "pass": true,
-    "signal_ms": 0.016749999999995935
+    "signal_ms": 0.016209000000003138
   },
   {
     "speaker": "customer",
@@ -197,6 +197,6 @@
     "expected": null,
     "actual": [],
     "pass": true,
-    "signal_ms": 0.015665999999997515
+    "signal_ms": 0.014875000000004468
   }
 ]

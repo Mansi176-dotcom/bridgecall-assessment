@@ -1,5 +1,6 @@
 """Local-only assessment server. Standard library runtime; no keys in frontend."""
 
+import importlib.util
 import base64, hashlib, hmac, io, json, os, secrets, threading, time, urllib.error, urllib.request, uuid, wave
 from http.server import ThreadingHTTPServer, BaseHTTPRequestHandler
 from pathlib import Path
@@ -27,8 +28,9 @@ LOCALES = {"en-PH": "PH", "fil-PH": "PH", "id-ID": "ID"}
 
 
 def transcribe(audio, language):
+    local = os.environ.get("ASR_PROVIDER", "openai") == "local"
     key = os.environ.get("OPENAI_API_KEY", "")
-    if not key:
+    if not local and not key:
         raise ValueError(
             "Audio ASR is not configured. Add OPENAI_API_KEY in your local .env and restart."
         )
@@ -43,6 +45,12 @@ def transcribe(audio, language):
                 raise ValueError("Expected mono PCM16 WAV, at most 12 seconds.")
     except (wave.Error, EOFError):
         raise ValueError("Invalid WAV audio.")
+    if local:
+        from .local_asr import transcribe_local
+
+        return transcribe_local(
+            audio, {"en-PH": "en", "fil-PH": "tl", "id-ID": "id"}[language]
+        )
     boundary = "bridge" + uuid.uuid4().hex
     parts = []
     for keyname, val in {
@@ -114,12 +122,30 @@ class Handler(BaseHTTPRequestHandler):
                 200,
                 {
                     "token": TOKEN,
-                    "asr_configured": bool(os.environ.get("OPENAI_API_KEY")),
-                    "model": os.environ.get("ASR_MODEL", "gpt-4o-mini-transcribe"),
+                    "asr_configured": (
+                        (importlib.util.find_spec("faster_whisper") is not None)
+                        if os.environ.get("ASR_PROVIDER") == "local"
+                        else bool(os.environ.get("OPENAI_API_KEY"))
+                    ),
+                    "provider": os.environ.get("ASR_PROVIDER", "openai"),
+                    "model": (
+                        ("faster-whisper/" + os.environ.get("LOCAL_ASR_MODEL", "base"))
+                        if os.environ.get("ASR_PROVIDER") == "local"
+                        else os.environ.get("ASR_MODEL", "gpt-4o-mini-transcribe")
+                    ),
                 },
             )
         if path == "/api/health":
             return self.send(200, {"status": "ok", "records": len(KB.records)})
+        if path in ("/demo/stream.wav", "/demo/stream.json"):
+            demo_path = ROOT / "data/demo" / path.rsplit("/", 1)[-1]
+            if not demo_path.exists():
+                return self.send(404, {"error": "Demo asset is not available"})
+            return self.send(
+                200,
+                demo_path.read_bytes(),
+                "audio/wav" if path.endswith("wav") else "application/octet-stream",
+            )
         files = {"/": "index.html", "/app.js": "app.js", "/style.css": "style.css"}
         if path not in files:
             return self.send(404, {"error": "Not found"})
@@ -240,11 +266,15 @@ class Handler(BaseHTTPRequestHandler):
                         }
                     )
                     return self.send(200, result)
+                if path == "/api/measurements":
+                    session["client_evidence"] = body.get("evidence", {})
+                    return self.send(200, {"saved": True})
                 if path == "/api/export":
                     return self.send(
                         200,
                         {
                             "language": session["agent"].language,
+                            "client_evidence": session.get("client_evidence"),
                             "turns": session["agent"].events,
                             "nudges": session["nudges"].history,
                             "action": session["agent"].action,

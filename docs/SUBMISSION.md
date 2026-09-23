@@ -2,7 +2,7 @@
 
 For the reviewer-facing overview, see the [submission index](../SUBMISSION.md).
 
-**The current package is not yet a complete assessment submission.** Code, documentation, synthetic inputs, and text evaluations are included. The required recorded evidence, account-backed ASR checks, still need to be completed. The repository, screenshots, documentation, and checked-in results are publicly accessible.
+**Updated evidence:** see [audio recordings, walkthrough, measured live replay, and real-human corpus test](AUDIO_EVIDENCE.md). Synthetic speech and corpus playback do not establish human interactive call completion or native quality. The remaining checklist below preserves those distinctions.
 
 ## What is already included
 
@@ -21,14 +21,14 @@ For the reviewer-facing overview, see the [submission index](../SUBMISSION.md).
 | Actual business script / rules / sources | Not supplied | Obtain them if available, replace fictional content, rerun tests |
 | Public GitHub repository | Published | Repository and supporting source links verified without authentication |
 | Web calling interface | Local implementation | Verify microphone/TTS in a supported browser; share setup and preferably a working hosted implementation if time permits |
-| Q1 three recorded calls | Missing | Run Q1-01 through Q1-03; include both sides, transcript, and actual result |
+| Q1 three recorded calls | Synthetic audio included | Human interactive validation pending |
 | Q2 retrieval evidence | Included | Review source matches and add actual business queries if sources change |
-| Q3 two PH calls | Missing | Run PH-01 and PH-02 with code-switching and fallback |
-| Q3 two ID calls + regional accent | Missing | Use a real consenting non-Jakarta regional speaker in ID-02 |
-| ASR observations and TTS compromises | Missing | Complete the report from recordings; record exact errors |
-| Q4 live audio recording and metrics | Missing | Run configured microphone pipeline; show nudges before stop; export P50/P95/component data |
-| Real-audio false-positive review | Missing | Label real windows, report errors and sample size |
-| Video walkthrough | Missing | Record the 5–7 minute outline after functional checks |
+| Q3 two PH calls | Synthetic audio included; partial results | Human review and Filipino ASR improvements pending |
+| Q3 two ID calls + regional accent | Synthetic calls + real human news-corpus test | Interactive regional-accent finance call pending |
+| ASR observations and TTS compromises | Included | See audio evidence report and actual recognized transcripts |
+| Q4 live audio recording and metrics | Included: real-time replay | Local ASR measurements and recorded UI; microphone/human test remains |
+| Real-audio false-positive review | Included: 10 synthetic-audio windows | Expand independent human/noise samples |
+| Video walkthrough | Included: synthetic narration | Candidate-recorded explanation remains optional supporting improvement |
 | Code, documentation, screenshot links | Public links checked | Check any future recording/video links separately |
 | Reply in original email thread | Not sent | Paste the final reviewed email, preserving the thread |
 

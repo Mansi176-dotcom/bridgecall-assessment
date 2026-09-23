@@ -43,7 +43,7 @@ Run at least 30–50 windows under the same conditions, retain raw rows, and rep
 
 ## Quality evidence
 
-The checked-in 20 text cases contain 10 positive and 10 negative/noisy fixtures. Their measured confusion matrix is in `evidence/summary.json`. They are regression tests, not an independent estimate of call-level precision. The package makes no measured real-audio false-positive or accent-quality claim.
+The checked-in 20 text cases contain 10 positive and 10 negative/noisy fixtures. Their measured confusion matrix is in `evidence/summary.json`. They are regression tests, not an independent estimate of call-level precision. The separate [audio report](AUDIO_EVIDENCE.md) documents a real-time synthetic speech replay: TP 5, FN 1, TN 4, FP 0 over 10 windows. This tiny set does not estimate production false-positive rate.
 
 For the live run, label each window with an expected signal, compare the display with the reference, then report TP, FP, TN, and FN. Also record duplicate/late alerts and whether a nudge remained useful by arrival. A signal fired on a misrecognized word is still a false positive.
 

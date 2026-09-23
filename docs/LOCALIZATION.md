@@ -36,7 +36,9 @@ Required terminology is in approved records: **premium, policy, beneficiary, rid
 
 Required terminology is represented: **cicilan, tenor, denda, DP, jatuh tempo, angsuran, pembiayaan**. The bot uses respectful Bahasa Indonesia even when the customer speaks colloquially. It does not suddenly switch to English. `Rp1.250.000` should be read as “satu juta dua ratus lima puluh ribu rupiah” in an amount-reading test; no actual installment amount is asserted by this demo.
 
-## Regional-accent test — required, still pending
+## Regional-accent test — corpus playback completed; interactive call pending
+
+The [audio report](AUDIO_EVIDENCE.md) includes an actual Javanese/standard human corpus playback comparison and synthetic PH/ID recognition failures. The template below is for the remaining interactive human review.
 
 Recruit a consenting Indonesian speaker with a self-described accent outside Jakarta, for example a Javanese-accented Bahasa Indonesia speaker. Ask them to use their natural speech. Do not imitate an accent or label standard TTS as a regional-speaker result.
 

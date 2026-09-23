@@ -1,0 +1,104 @@
+{
+  "evidence_type": "real_human_corpus_playback_ASR_test_not_interactive_financial_call",
+  "source": "https://github.com/s-sakti/data_indsp_news_lvcsr",
+  "citation": "Sakriani Sakti et al. (2008), Development of Indonesian Large Vocabulary Continuous Speech Recognition System within A-STAR Project, TCAST, pp. 19–24.",
+  "license": "CC BY-NC-SA 4.0; source additionally requests no public dataset copies without permission. Original media are not redistributed.",
+  "selection": "First three shared utterance IDs in ascending order with at least eight reference words; selected before ASR.",
+  "model": "faster-whisper 1.2.1 / base / CPU int8 / beam_size 1 / language id",
+  "normalization": "Unicode word tokens, casefold; no number normalization",
+  "limitations": "One speaker per accent, three matched news sentences each, clean studio speech. No finance-call realism, native-speaker review, or population-level accent conclusion.",
+  "summary": {
+    "Ind006": {
+      "utterances": 3,
+      "reference_words": 28,
+      "errors": 8,
+      "aggregate_wer": 0.2857142857142857
+    },
+    "Ind003": {
+      "utterances": 3,
+      "reference_words": 28,
+      "errors": 9,
+      "aggregate_wer": 0.32142857142857145
+    }
+  },
+  "results": [
+    {
+      "speaker_id": "Ind006",
+      "accent": "Javanese-accented Indonesian (source label J)",
+      "archive_url": "https://raw.githubusercontent.com/s-sakti/data_indsp_news_lvcsr/main/speech/Ind0/Ind006.zip",
+      "archive_member": "Ind006/Ind006_M_J_C_news_0165.wav",
+      "audio_sha256": "40f85b11a5f0a9d38736a465aa6a224e8390507d2def1a12e3b762b542bf8456",
+      "reference": "wasit dan pelatih bali ikuti klinik futsal pssi",
+      "hypothesis": "Wacit dan pelatih bali ikuti klinik Futsal PSSE.",
+      "reference_words": 8,
+      "word_errors": 2,
+      "wer": 0.25,
+      "asr_ms": 2821.682665962726
+    },
+    {
+      "speaker_id": "Ind006",
+      "accent": "Javanese-accented Indonesian (source label J)",
+      "archive_url": "https://raw.githubusercontent.com/s-sakti/data_indsp_news_lvcsr/main/speech/Ind0/Ind006.zip",
+      "archive_member": "Ind006/Ind006_M_J_C_news_0170.wav",
+      "audio_sha256": "01d48da92325ee1e5de076aa172704a60854e64a916cfd2c3cb73ac17984ea6e",
+      "reference": "tanah ikut hanyut ke danau yang airnya berwarna hijau jernih",
+      "hypothesis": "Tanah ikut hanjut ke Danau yang akhirnya berwarna hijau jerni.",
+      "reference_words": 10,
+      "word_errors": 3,
+      "wer": 0.3,
+      "asr_ms": 1399.4441248942167
+    },
+    {
+      "speaker_id": "Ind006",
+      "accent": "Javanese-accented Indonesian (source label J)",
+      "archive_url": "https://raw.githubusercontent.com/s-sakti/data_indsp_news_lvcsr/main/speech/Ind0/Ind006.zip",
+      "archive_member": "Ind006/Ind006_M_J_C_news_0174.wav",
+      "audio_sha256": "1461eda1065772a8fbb144c58671c8b2f9814835c2fc6841f5030db8d1764d5d",
+      "reference": "pasir itu akan turun tiba-tiba dalam tonase amat besar",
+      "hypothesis": "Pasir itu akan turun di batiba dalam tonasa amat besar.",
+      "reference_words": 10,
+      "word_errors": 3,
+      "wer": 0.3,
+      "asr_ms": 873.6616249661893
+    },
+    {
+      "speaker_id": "Ind003",
+      "accent": "Standard Indonesian (source label U)",
+      "archive_url": "https://raw.githubusercontent.com/s-sakti/data_indsp_news_lvcsr/main/speech/Ind0/Ind003.zip",
+      "archive_member": "Ind003/Ind003_M_U_C_news_0165.wav",
+      "audio_sha256": "4bce62effcb4d7fea801d5fc5c48a5cf4d01169d7be9326a9f24ce43844fa286",
+      "reference": "wasit dan pelatih bali ikuti klinik futsal pssi",
+      "hypothesis": "Wastit dan pelatih balik ikut klinik futsal PSSE.",
+      "reference_words": 8,
+      "word_errors": 4,
+      "wer": 0.5,
+      "asr_ms": 856.4507500268519
+    },
+    {
+      "speaker_id": "Ind003",
+      "accent": "Standard Indonesian (source label U)",
+      "archive_url": "https://raw.githubusercontent.com/s-sakti/data_indsp_news_lvcsr/main/speech/Ind0/Ind003.zip",
+      "archive_member": "Ind003/Ind003_M_U_C_news_0170.wav",
+      "audio_sha256": "39f5a2bf03a97d996bf87a0db674cc4a09f9dc5d32b0079dec8de3e9a909e42a",
+      "reference": "tanah ikut hanyut ke danau yang airnya berwarna hijau jernih",
+      "hypothesis": "Tanah ikut hanyut kedalau yang akhirnya berwarna hijau jenis.",
+      "reference_words": 10,
+      "word_errors": 4,
+      "wer": 0.4,
+      "asr_ms": 1016.8284580577165
+    },
+    {
+      "speaker_id": "Ind003",
+      "accent": "Standard Indonesian (source label U)",
+      "archive_url": "https://raw.githubusercontent.com/s-sakti/data_indsp_news_lvcsr/main/speech/Ind0/Ind003.zip",
+      "archive_member": "Ind003/Ind003_M_U_C_news_0174.wav",
+      "audio_sha256": "4a1746fdd90c47332370d8e029c565b8588e8855402cf9e045f6b9db2bfbdcef",
+      "reference": "pasir itu akan turun tiba-tiba dalam tonase amat besar",
+      "hypothesis": "Pasir itu akan turun tiba-tiba dalam tunasu amat besar.",
+      "reference_words": 10,
+      "word_errors": 1,
+      "wer": 0.1,
+      "asr_ms": 1039.3252079375088
+    }
+  ]
+}

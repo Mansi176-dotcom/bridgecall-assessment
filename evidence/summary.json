@@ -12,8 +12,8 @@
   "fn": 0,
   "fixture_false_positive_rate": 0.0,
   "text_signal_latency_ms": {
-    "p50": 0.02016700000000149,
-    "p95": 0.3945840000000034
+    "p50": 0.019791999999997645,
+    "p95": 0.3825000000000009
   },
   "audio_asr_latency": null,
   "audio_end_to_end_latency": null,

@@ -1,0 +1,116 @@
+{
+  "summary": {
+    "id": "Q1-03-conflict",
+    "evidence_type": "synthetic_audio_loop_not_human_call",
+    "language": "en-PH",
+    "final_state": "closed",
+    "expected_final_state": "closed",
+    "flow_verdict": "pass",
+    "reference_words": 7,
+    "word_errors": 1,
+    "wer": 0.14285714285714285,
+    "duration_s": 56.2,
+    "recording": "Q1-03-conflict.mp3",
+    "asr_model": "faster-whisper/base CPU int8 beam_size=1",
+    "tts": "gTTS 2.5.4, language en",
+    "native_speaker_review": false
+  },
+  "events": [
+    {
+      "speaker": "assistant",
+      "start_s": 0.0,
+      "end_s": 15.504,
+      "text": "Hello, I’m the Bridgecall automated demo assistant for fictional Harbor Life. This is a simulation, not insurance advice or an offer. May I ask a few screening questions? Please say yes or no."
+    },
+    {
+      "speaker": "customer",
+      "start_s": 15.804,
+      "end_s": 16.764,
+      "text": "yes",
+      "reference": "yes",
+      "asr": "Yes.",
+      "asr_ms": 1062.9619997926056
+    },
+    {
+      "speaker": "assistant",
+      "start_s": 17.064,
+      "end_s": 21.864,
+      "text": "What is your age in years? Please use digits when typing.",
+      "state": "age",
+      "citation": null,
+      "action": null
+    },
+    {
+      "speaker": "customer",
+      "start_s": 22.164,
+      "end_s": 24.3,
+      "text": "22 or 32",
+      "reference": "22 or 32",
+      "asr": "22-32",
+      "asr_ms": 884.825250133872
+    },
+    {
+      "speaker": "assistant",
+      "start_s": 24.6,
+      "end_s": 31.536,
+      "text": "I heard conflicting or invalid details. Please give one age in years so I can confirm it.",
+      "state": "age",
+      "citation": null,
+      "action": null
+    },
+    {
+      "speaker": "customer",
+      "start_s": 31.836,
+      "end_s": 32.964,
+      "text": "32",
+      "reference": "32",
+      "asr": "32",
+      "asr_ms": 1512.2187498491257
+    },
+    {
+      "speaker": "assistant",
+      "start_s": 33.264,
+      "end_s": 38.16,
+      "text": "Do you currently live in the Philippines? Please say yes or no.",
+      "state": "resident",
+      "citation": null,
+      "action": null
+    },
+    {
+      "speaker": "customer",
+      "start_s": 38.46,
+      "end_s": 39.42,
+      "text": "yes",
+      "reference": "yes",
+      "asr": "Yes.",
+      "asr_ms": 2678.2102091237903
+    },
+    {
+      "speaker": "assistant",
+      "start_s": 39.72,
+      "end_s": 48.84,
+      "text": "May I create a mock adviser callback request? Please say yes or no. No adviser is contacted by this demo.",
+      "state": "consent",
+      "citation": null,
+      "action": null
+    },
+    {
+      "speaker": "customer",
+      "start_s": 49.14,
+      "end_s": 49.908,
+      "text": "no",
+      "reference": "no",
+      "asr": "No.",
+      "asr_ms": 993.3832499664277
+    },
+    {
+      "speaker": "assistant",
+      "start_s": 50.208,
+      "end_s": 55.896,
+      "text": "Understood. I will stop the screening and will not create a callback request.",
+      "state": "closed",
+      "citation": null,
+      "action": null
+    }
+  ]
+}

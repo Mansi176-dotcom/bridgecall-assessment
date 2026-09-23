@@ -1,0 +1,164 @@
+{
+  "summary": {
+    "id": "Q3-ID-02-colloquial",
+    "evidence_type": "synthetic_audio_loop_not_human_call",
+    "language": "id-ID",
+    "final_state": "time",
+    "expected_final_state": "done",
+    "flow_verdict": "partial",
+    "reference_words": 21,
+    "word_errors": 12,
+    "wer": 0.5714285714285714,
+    "duration_s": 132.49,
+    "recording": "Q3-ID-02-colloquial.mp3",
+    "asr_model": "faster-whisper/base CPU int8 beam_size=1",
+    "tts": "gTTS 2.5.4, language id",
+    "native_speaker_review": false
+  },
+  "events": [
+    {
+      "speaker": "assistant",
+      "start_s": 0.0,
+      "end_s": 18.048,
+      "text": "Selamat pagi atau siang, Bapak/Ibu. Saya asisten demo otomatis Bridgecall untuk Nusantara Finance fiktif. Ini simulasi, bukan penawaran pembiayaan. Boleh saya lanjutkan? Jawab ya atau tidak."
+    },
+    {
+      "speaker": "customer",
+      "start_s": 18.348,
+      "end_s": 19.14,
+      "text": "iya",
+      "reference": "iya",
+      "asr": "Iya.",
+      "asr_ms": 1838.7097918894142
+    },
+    {
+      "speaker": "assistant",
+      "start_s": 19.44,
+      "end_s": 29.376,
+      "text": "Boleh saya mencatat permintaan callback untuk petugas dalam demo? Jawab ya atau tidak. Belum ada petugas yang dihubungi.",
+      "state": "consent",
+      "citation": null,
+      "action": null
+    },
+    {
+      "speaker": "customer",
+      "start_s": 29.676,
+      "end_s": 33.564,
+      "text": "Saya belum gajian, nggak bisa bayar cicilan",
+      "reference": "Saya belum gajian, nggak bisa bayar cicilan",
+      "asr": "Saya belum gaji ya, nggak bisa bayar cici lain.",
+      "asr_ms": 2228.0439159367234
+    },
+    {
+      "speaker": "assistant",
+      "start_s": 33.864,
+      "end_s": 60.504,
+      "text": "Saya paham, Bapak/Ibu sedang kesulitan membayar. Saya bisa mencatat permintaan untuk membahas pilihan bantuan dengan petugas. Tidak ada janji penundaan, restrukturisasi, atau penghapusan denda. Boleh saya mencatat permintaan callback untuk petugas dalam demo? Jawab ya atau tidak. Belum ada petugas yang dihubungi.",
+      "state": "consent",
+      "citation": {
+        "record_id": "id-budget-id-ID",
+        "source": "data/raw/business.json#/11/answers/id-ID",
+        "version": "1.0",
+        "content_sha256": "28dfd66f0866a0e55c0b0ca0b84ba432f5d4e6a952d3ae5e6bfd07779dbbdf65",
+        "score": 5.6335
+      },
+      "action": null
+    },
+    {
+      "speaker": "customer",
+      "start_s": 60.804,
+      "end_s": 63.444,
+      "text": "Jelaskan tenor dan DP",
+      "reference": "Jelaskan tenor dan DP",
+      "asr": "Jelas kantenor dan DP.",
+      "asr_ms": 2591.5674588177353
+    },
+    {
+      "speaker": "assistant",
+      "start_s": 63.744,
+      "end_s": 88.152,
+      "text": "Tenor adalah jangka waktu pembiayaan, sedangkan DP adalah uang muka. Besaran DP dan pilihan tenor harus diperiksa dalam penawaran resmi; demo ini tidak menetapkan angka. Boleh saya mencatat permintaan callback untuk petugas dalam demo? Jawab ya atau tidak. Belum ada petugas yang dihubungi.",
+      "state": "consent",
+      "citation": {
+        "record_id": "id-tenor-id-ID",
+        "source": "data/raw/business.json#/12/answers/id-ID",
+        "version": "1.0",
+        "content_sha256": "98775550be66e3d8b7cd8b3913c130b9b18d960226bb2f0a683b3f8d7d7671f0",
+        "score": 2.5905
+      },
+      "action": null
+    },
+    {
+      "speaker": "customer",
+      "start_s": 88.452,
+      "end_s": 89.988,
+      "text": "mau petugas",
+      "reference": "mau petugas",
+      "asr": "Maupatugas",
+      "asr_ms": 2308.4100410342216
+    },
+    {
+      "speaker": "assistant",
+      "start_s": 90.288,
+      "end_s": 99.024,
+      "text": "Maaf, informasi itu belum terverifikasi di demo ini. Saya bisa mencatat permintaan bantuan petugas.",
+      "state": "consent",
+      "citation": null,
+      "action": null
+    },
+    {
+      "speaker": "customer",
+      "start_s": 99.324,
+      "end_s": 100.092,
+      "text": "ya",
+      "reference": "ya",
+      "asr": "Ya",
+      "asr_ms": 2785.9962917864323
+    },
+    {
+      "speaker": "assistant",
+      "start_s": 100.392,
+      "end_s": 108.336,
+      "text": "Tanggal dan jam berapa Bapak/Ibu ingin ditelepon? Sebutkan juga WIB, WITA, atau WIT.",
+      "state": "time",
+      "citation": null,
+      "action": null
+    },
+    {
+      "speaker": "customer",
+      "start_s": 108.636,
+      "end_s": 113.844,
+      "text": "26 September jam 9 WITA",
+      "reference": "26 September jam 9 WITA",
+      "asr": "Tanggal 26 September jam 9 waktu Indonesia tengah.",
+      "asr_ms": 3152.875875122845
+    },
+    {
+      "speaker": "assistant",
+      "start_s": 114.144,
+      "end_s": 122.088,
+      "text": "Tanggal dan jam berapa Bapak/Ibu ingin ditelepon? Sebutkan juga WIB, WITA, atau WIT.",
+      "state": "time",
+      "citation": null,
+      "action": null
+    },
+    {
+      "speaker": "customer",
+      "start_s": 122.388,
+      "end_s": 123.156,
+      "text": "ya",
+      "reference": "ya",
+      "asr": "Ya",
+      "asr_ms": 2143.414624966681
+    },
+    {
+      "speaker": "assistant",
+      "start_s": 123.456,
+      "end_s": 132.192,
+      "text": "Maaf, informasi itu belum terverifikasi di demo ini. Saya bisa mencatat permintaan bantuan petugas.",
+      "state": "time",
+      "citation": null,
+      "action": null
+    }
+  ]
+}

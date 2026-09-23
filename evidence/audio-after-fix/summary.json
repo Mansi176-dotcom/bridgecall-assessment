@@ -1,0 +1,34 @@
+[
+  {
+    "id": "Q3-ID-01-formal",
+    "evidence_type": "synthetic_audio_loop_not_human_call",
+    "language": "id-ID",
+    "final_state": "done",
+    "expected_final_state": "done",
+    "flow_verdict": "pass",
+    "reference_words": 12,
+    "word_errors": 5,
+    "wer": 0.4166666666666667,
+    "duration_s": 95.22,
+    "recording": "Q3-ID-01-formal.mp3",
+    "asr_model": "faster-whisper/base CPU int8 beam_size=1",
+    "tts": "gTTS 2.5.4, language id",
+    "native_speaker_review": false
+  },
+  {
+    "id": "Q3-ID-02-colloquial",
+    "evidence_type": "synthetic_audio_loop_not_human_call",
+    "language": "id-ID",
+    "final_state": "done",
+    "expected_final_state": "done",
+    "flow_verdict": "pass",
+    "reference_words": 21,
+    "word_errors": 12,
+    "wer": 0.5714285714285714,
+    "duration_s": 137.32,
+    "recording": "Q3-ID-02-colloquial.mp3",
+    "asr_model": "faster-whisper/base CPU int8 beam_size=1",
+    "tts": "gTTS 2.5.4, language id",
+    "native_speaker_review": false
+  }
+]

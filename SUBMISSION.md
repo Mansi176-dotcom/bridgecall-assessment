@@ -1,41 +1,20 @@
 # Bridgecall — assessment submission
 
 **Candidate:** Mansi Birhman  
-**Repository:** [Mansi176-dotcom/bridgecall-assessment](https://github.com/Mansi176-dotcom/bridgecall-assessment)
+**Public repository:** https://github.com/Mansi176-dotcom/bridgecall-assessment
 
-A local prototype connecting traceable business knowledge, localized conversation flows, and call-coaching logic. This index identifies the included work and the evidence that remains outstanding.
+A local prototype joining source-cited business answers, Philippine and Indonesian conversation flows, and live coaching.
 
-## Review links
+## Start here
 
-| Material | Location |
-|---|---|
-| Overview and setup | [README](README.md) |
-| Requirement-by-requirement guide | [Reviewer guide](docs/REVIEW_GUIDE.md) |
-| Seven application screenshots | [Screenshot gallery](docs/SCREENSHOTS.md) |
-| Architecture and conversation state | [Architecture](docs/ARCHITECTURE.md) |
-| KB schema, ingestion, retrieval, and citations | [Knowledge-base design](docs/KNOWLEDGE_BASE.md) |
-| Localization examples and voice configuration | [Localization](docs/LOCALIZATION.md) |
-| Streaming design, nudge controls, and timing definitions | [Live insights](docs/LIVE_INSIGHTS.md) |
-| Reproducible text evaluation | [Results](evidence/RESULTS.md) |
-| Retrieved passages, source references, and verdicts | [Retrieval details](evidence/retrieval-results.json) |
-| Known limitations and production plan | [Limitations](docs/LIMITATIONS.md) |
-| Continuous integration | [GitHub Actions](https://github.com/Mansi176-dotcom/bridgecall-assessment/actions/workflows/tests.yml) |
+1. [Walkthrough video](evidence/video/walkthrough.mp4) — synthetic narration explaining a design choice, an observed failure, and its correction.
+2. [Audio evidence report](docs/AUDIO_EVIDENCE.md) — seven synthetic sessions, two Indonesian reruns, actual ASR observations, and real-human regional-accent corpus results.
+3. [Live demo video](evidence/video/live-demo.mp4) — nudges appear during a real-time audio replay; [measured latency](evidence/live-latency-summary.json).
+4. [Screenshot gallery](docs/SCREENSHOTS.md), [architecture](docs/ARCHITECTURE.md), [KB design](docs/KNOWLEDGE_BASE.md), and [setup](README.md).
+5. [Text evaluation](evidence/RESULTS.md), [limitations](docs/LIMITATIONS.md), and [requirement map](docs/REVIEW_GUIDE.md).
 
-## Included and verified
+## Verified scope
 
-- Source code, environment-variable template, sample data, local setup, and documentation.
-- 23 approved locale-specific knowledge records with source references and hashes.
-- 27 automated tests; 14 retrieval/abstention fixtures; 20 nudge fixtures.
-- Actual browser screenshots of typed interactions in English, Filipino/Taglish, and Indonesian.
-- Explicit consent, unsupported-answer fallback, and mock callback behavior.
-- Optional live microphone transcription integration and latency export implementation.
+29 unit tests pass, with 14 retrieval/abstention and 20 nudge fixtures. The actual browser replay measured P50 4.91 s / P95 8.73 s from audio-window start to display over 10 windows. Five expected signals were detected, one was missed, and four negative windows produced no false alert. These are small authored tests, not production accuracy claims.
 
-The test counts describe small authored regression sets. The screenshots and simulated transcripts are not evidence of actual calls, ASR accuracy, or regional-accent performance. Live transcription is implemented but has not been validated against the provider in this package.
-
-## Outstanding assessment evidence
-
-The three Q1 call recordings, two calls per Q3 market, walkthrough video, native-speaker/regional-accent evaluation, provider-backed live-audio latency, and real-audio false-positive measurements are not included. Consequently, this package does not yet satisfy the full assessment requirements.
-
-Business content is fictional because no business source pack was supplied. The callback is a local mock; it does not connect to a person or book an appointment. The public repository is accessible, but the application itself runs locally and is not a hosted calling endpoint.
-
-Use the [recording runbook](docs/RECORDING_RUNBOOK.md) and [submission checklist](docs/SUBMISSION.md) to complete those items. The [evidence manifest](evidence/submission-manifest.json) keeps missing results explicit.
+The recordings use synthetic speakers. The separate regional-accent test uses published human news speech, not an interactive financial call. Human call validation and native-speaker review remain outstanding. Filipino ASR failures are reported, not hidden. The narrated walkthrough uses synthetic narration rather than the candidate's voice. Fictional businesses and mock callbacks keep this a demonstration, not a deployed financial service.

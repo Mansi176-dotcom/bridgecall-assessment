@@ -20,6 +20,9 @@ def usable_url(value):
 def main():
     m = json.loads((ROOT / "evidence/submission-manifest.json").read_text())
     missing = []
+    for field in ("human_call_validation", "native_speaker_review"):
+        if not m.get(field):
+            missing.append(field)
     for field in (
         "repository_url",
         "walkthrough_url",

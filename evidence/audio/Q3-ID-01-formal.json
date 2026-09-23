@@ -1,0 +1,122 @@
+{
+  "summary": {
+    "id": "Q3-ID-01-formal",
+    "evidence_type": "synthetic_audio_loop_not_human_call",
+    "language": "id-ID",
+    "final_state": "time",
+    "expected_final_state": "done",
+    "flow_verdict": "partial",
+    "reference_words": 12,
+    "word_errors": 5,
+    "wer": 0.4166666666666667,
+    "duration_s": 90.47,
+    "recording": "Q3-ID-01-formal.mp3",
+    "asr_model": "faster-whisper/base CPU int8 beam_size=1",
+    "tts": "gTTS 2.5.4, language id",
+    "native_speaker_review": false
+  },
+  "events": [
+    {
+      "speaker": "assistant",
+      "start_s": 0.0,
+      "end_s": 18.048,
+      "text": "Selamat pagi atau siang, Bapak/Ibu. Saya asisten demo otomatis Bridgecall untuk Nusantara Finance fiktif. Ini simulasi, bukan penawaran pembiayaan. Boleh saya lanjutkan? Jawab ya atau tidak."
+    },
+    {
+      "speaker": "customer",
+      "start_s": 18.348,
+      "end_s": 19.116,
+      "text": "ya",
+      "reference": "ya",
+      "asr": "Ya",
+      "asr_ms": 627.1091250237077
+    },
+    {
+      "speaker": "assistant",
+      "start_s": 19.416,
+      "end_s": 29.352,
+      "text": "Boleh saya mencatat permintaan callback untuk petugas dalam demo? Jawab ya atau tidak. Belum ada petugas yang dihubungi.",
+      "state": "consent",
+      "citation": null,
+      "action": null
+    },
+    {
+      "speaker": "customer",
+      "start_s": 29.652,
+      "end_s": 31.812,
+      "text": "Berapa denda kalau telat?",
+      "reference": "Berapa denda kalau telat?",
+      "asr": "Berapa denda kalau telah?",
+      "asr_ms": 1236.1129589844495
+    },
+    {
+      "speaker": "assistant",
+      "start_s": 32.112,
+      "end_s": 57.048,
+      "text": "Denda mengikuti kontrak pembiayaan yang berlaku. Demo ini tidak memiliki tarif denda terverifikasi. Saya bisa mencatat permintaan bantuan petugas, tanpa menjanjikan penghapusan denda. Boleh saya mencatat permintaan callback untuk petugas dalam demo? Jawab ya atau tidak. Belum ada petugas yang dihubungi.",
+      "state": "consent",
+      "citation": {
+        "record_id": "id-penalty-id-ID",
+        "source": "data/raw/business.json#/10/answers/id-ID",
+        "version": "1.0",
+        "content_sha256": "04e212d4a37a46723c7c037cd1dc4e53ebdd859b0305c996bf9a7cff0c9ddfaa",
+        "score": 1.998
+      },
+      "action": null
+    },
+    {
+      "speaker": "customer",
+      "start_s": 57.348,
+      "end_s": 58.116,
+      "text": "ya",
+      "reference": "ya",
+      "asr": "Ya",
+      "asr_ms": 738.5967499576509
+    },
+    {
+      "speaker": "assistant",
+      "start_s": 58.416,
+      "end_s": 66.36,
+      "text": "Tanggal dan jam berapa Bapak/Ibu ingin ditelepon? Sebutkan juga WIB, WITA, atau WIT.",
+      "state": "time",
+      "citation": null,
+      "action": null
+    },
+    {
+      "speaker": "customer",
+      "start_s": 66.66,
+      "end_s": 71.82,
+      "text": "25 September jam 10 WIB",
+      "reference": "25 September jam 10 WIB",
+      "asr": "Tanggal 25 September jam 10 waktu Indonesia Barat.",
+      "asr_ms": 1427.1734999492764
+    },
+    {
+      "speaker": "assistant",
+      "start_s": 72.12,
+      "end_s": 80.064,
+      "text": "Tanggal dan jam berapa Bapak/Ibu ingin ditelepon? Sebutkan juga WIB, WITA, atau WIT.",
+      "state": "time",
+      "citation": null,
+      "action": null
+    },
+    {
+      "speaker": "customer",
+      "start_s": 80.364,
+      "end_s": 81.132,
+      "text": "ya",
+      "reference": "ya",
+      "asr": "Ya",
+      "asr_ms": 2314.6344588603824
+    },
+    {
+      "speaker": "assistant",
+      "start_s": 81.432,
+      "end_s": 90.168,
+      "text": "Maaf, informasi itu belum terverifikasi di demo ini. Saya bisa mencatat permintaan bantuan petugas.",
+      "state": "time",
+      "citation": null,
+      "action": null
+    }
+  ]
+}

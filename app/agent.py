@@ -182,7 +182,9 @@ class Agent:
                 and (re.search(r"\d|tomorrow|bukas|besok|alas", text, re.I))
             ):
                 if self.market == "ID" and not re.search(
-                    r"\b(WIB|WITA|WIT)\b", text, re.I
+                    r"\b(WIB|WITA|WIT|waktu Indonesia Barat|waktu Indonesia Tengah|waktu Indonesia Timur)\b",
+                    text,
+                    re.I,
                 ):
                     answer = self.msg("time")
                 else:

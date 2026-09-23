@@ -1,0 +1,158 @@
+{
+  "summary": {
+    "id": "Q3-PH-01-taglish",
+    "evidence_type": "synthetic_audio_loop_not_human_call",
+    "language": "fil-PH",
+    "final_state": "permission",
+    "expected_final_state": "done",
+    "flow_verdict": "partial",
+    "reference_words": 18,
+    "word_errors": 17,
+    "wer": 0.9444444444444444,
+    "duration_s": 110.89,
+    "recording": "Q3-PH-01-taglish.mp3",
+    "asr_model": "faster-whisper/base CPU int8 beam_size=1",
+    "tts": "gTTS 2.5.4, language tl",
+    "native_speaker_review": false
+  },
+  "events": [
+    {
+      "speaker": "assistant",
+      "start_s": 0.0,
+      "end_s": 19.416,
+      "text": "Magandang araw po. Ako ang automated demo assistant ng Bridgecall para sa fictional Harbor Life. Simulation lang ito, hindi insurance advice o offer. Maaari po ba akong magtanong para sa paunang screening? Oo o hindi po."
+    },
+    {
+      "speaker": "customer",
+      "start_s": 19.716,
+      "end_s": 20.652,
+      "text": "oo",
+      "reference": "oo",
+      "asr": "Oh!",
+      "asr_ms": 455.93087491579354
+    },
+    {
+      "speaker": "assistant",
+      "start_s": 20.952,
+      "end_s": 30.216,
+      "text": "Wala po akong verified na impormasyon tungkol diyan. Puwede tayong magtala ng mock request para sa tulong ng adviser.",
+      "state": "permission",
+      "citation": null,
+      "action": null
+    },
+    {
+      "speaker": "customer",
+      "start_s": 30.516,
+      "end_s": 32.292,
+      "text": "29",
+      "reference": "29",
+      "asr": "dalo ang pot sa am.",
+      "asr_ms": 478.7528330925852
+    },
+    {
+      "speaker": "assistant",
+      "start_s": 32.592,
+      "end_s": 41.856,
+      "text": "Wala po akong verified na impormasyon tungkol diyan. Puwede tayong magtala ng mock request para sa tulong ng adviser.",
+      "state": "permission",
+      "citation": null,
+      "action": null
+    },
+    {
+      "speaker": "customer",
+      "start_s": 42.156,
+      "end_s": 43.092,
+      "text": "oo",
+      "reference": "oo",
+      "asr": "Oh!",
+      "asr_ms": 423.2715831603855
+    },
+    {
+      "speaker": "assistant",
+      "start_s": 43.392,
+      "end_s": 52.656,
+      "text": "Wala po akong verified na impormasyon tungkol diyan. Puwede tayong magtala ng mock request para sa tulong ng adviser.",
+      "state": "permission",
+      "citation": null,
+      "action": null
+    },
+    {
+      "speaker": "customer",
+      "start_s": 52.956,
+      "end_s": 56.772,
+      "text": "Mahal ang premium, may budget option ba?",
+      "reference": "Mahal ang premium, may budget option ba?",
+      "asr": "Mahalang premium may budget option ba?",
+      "asr_ms": 1123.6990001052618
+    },
+    {
+      "speaker": "assistant",
+      "start_s": 57.072,
+      "end_s": 74.688,
+      "text": "Kung mabigat sa budget ang premium, puwedeng magpa-callback sa adviser para mapag-usapan ang budget. Walang ipinapangakong discount o approval. Oo o hindi po muna para hindi ko ipagpalagay ang pahintulot ninyo.",
+      "state": "permission",
+      "citation": {
+        "record_id": "ph-budget-fil-PH",
+        "source": "data/raw/business.json#/4/answers/fil-PH",
+        "version": "1.0",
+        "content_sha256": "a0747cbd7d580754e4d3d9adbb1a9d6e70dea260a7441b00ec9530d1cb5b88ea",
+        "score": 4.0849
+      },
+      "action": null
+    },
+    {
+      "speaker": "customer",
+      "start_s": 74.988,
+      "end_s": 75.924,
+      "text": "oo",
+      "reference": "oo",
+      "asr": "Oh!",
+      "asr_ms": 678.352375049144
+    },
+    {
+      "speaker": "assistant",
+      "start_s": 76.224,
+      "end_s": 85.488,
+      "text": "Wala po akong verified na impormasyon tungkol diyan. Puwede tayong magtala ng mock request para sa tulong ng adviser.",
+      "state": "permission",
+      "citation": null,
+      "action": null
+    },
+    {
+      "speaker": "customer",
+      "start_s": 85.788,
+      "end_s": 90.228,
+      "text": "25 Setyembre alas tres ng hapon",
+      "reference": "25 Setyembre alas tres ng hapon",
+      "asr": "ika dalawamputlima ng September ala stress ng hapon.",
+      "asr_ms": 733.3197500556707
+    },
+    {
+      "speaker": "assistant",
+      "start_s": 90.528,
+      "end_s": 99.792,
+      "text": "Wala po akong verified na impormasyon tungkol diyan. Puwede tayong magtala ng mock request para sa tulong ng adviser.",
+      "state": "permission",
+      "citation": null,
+      "action": null
+    },
+    {
+      "speaker": "customer",
+      "start_s": 100.092,
+      "end_s": 101.028,
+      "text": "oo",
+      "reference": "oo",
+      "asr": "Oh!",
+      "asr_ms": 807.2057499084622
+    },
+    {
+      "speaker": "assistant",
+      "start_s": 101.328,
+      "end_s": 110.592,
+      "text": "Wala po akong verified na impormasyon tungkol diyan. Puwede tayong magtala ng mock request para sa tulong ng adviser.",
+      "state": "permission",
+      "citation": null,
+      "action": null
+    }
+  ]
+}

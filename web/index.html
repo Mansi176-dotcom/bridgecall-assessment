@@ -169,6 +169,12 @@
               transcribed while capture continues. Text checks validate rules
               only; they are not audio evidence.
             </p>
+            <h3>Reproducible audio replay</h3>
+            <p class="help">Synthetic customer/agent audio plays at real-time speed in four-second windows. Actual ASR and browser display latency are measured. This is a replay test, not a human call.</p>
+            <button id="replay" class="primary">Run 40-second audio demo</button>
+            <p id="replaystatus" class="help">No replay running.</p>
+            <details><summary>Latest replay measurement JSON</summary><pre id="replayreport" style="white-space:pre-wrap;font-size:10px;max-height:160px;overflow:auto"></pre></details>
+            <hr />
             <label class="check consent"
               ><input id="audioconsent" type="checkbox" /> Testers consent to
               recording and sending audio to the configured ASR provider.</label
@@ -190,6 +196,7 @@
             </p>
             <button id="resetcoach">Reset coach session</button>
             <hr />
+
             <form id="analyzeform">
               <label for="signaltext">Text-only rule check</label>
               <div class="inputrow">
@@ -227,7 +234,7 @@
                 separately.
               </p>
               <p class="help">
-                Includes the capture window. ASR = server provider round trip.
+                Includes the capture window. ASR = local inference or provider round trip.
                 Signal detection is measured separately. LLM: not used. Delivery
                 is a residual estimate, including upload and UI scheduling.
               </p>

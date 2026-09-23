@@ -1,0 +1,140 @@
+{
+  "summary": {
+    "id": "Q3-PH-02-human",
+    "evidence_type": "synthetic_audio_loop_not_human_call",
+    "language": "fil-PH",
+    "final_state": "consent",
+    "expected_final_state": "done",
+    "flow_verdict": "partial",
+    "reference_words": 17,
+    "word_errors": 9,
+    "wer": 0.5294117647058824,
+    "duration_s": 103.81,
+    "recording": "Q3-PH-02-human.mp3",
+    "asr_model": "faster-whisper/base CPU int8 beam_size=1",
+    "tts": "gTTS 2.5.4, language tl",
+    "native_speaker_review": false
+  },
+  "events": [
+    {
+      "speaker": "assistant",
+      "start_s": 0.0,
+      "end_s": 19.416,
+      "text": "Magandang araw po. Ako ang automated demo assistant ng Bridgecall para sa fictional Harbor Life. Simulation lang ito, hindi insurance advice o offer. Maaari po ba akong magtanong para sa paunang screening? Oo o hindi po."
+    },
+    {
+      "speaker": "customer",
+      "start_s": 19.716,
+      "end_s": 20.652,
+      "text": "oo",
+      "reference": "oo",
+      "asr": "Oh!",
+      "asr_ms": 687.583833001554
+    },
+    {
+      "speaker": "assistant",
+      "start_s": 20.952,
+      "end_s": 30.216,
+      "text": "Wala po akong verified na impormasyon tungkol diyan. Puwede tayong magtala ng mock request para sa tulong ng adviser.",
+      "state": "permission",
+      "citation": null,
+      "action": null
+    },
+    {
+      "speaker": "customer",
+      "start_s": 30.516,
+      "end_s": 32.652,
+      "text": "Ano ang bank referral?",
+      "reference": "Ano ang bank referral?",
+      "asr": "Ano ang bank referral.",
+      "asr_ms": 531.7763339262456
+    },
+    {
+      "speaker": "assistant",
+      "start_s": 32.952,
+      "end_s": 51.696,
+      "text": "Ang bank referral ay pagpapakilala sa insurance adviser. Insurance ito, hindi bank deposit. Hindi kami nangangako ng guaranteed investment returns. Oo o hindi po muna para hindi ko ipagpalagay ang pahintulot ninyo.",
+      "state": "permission",
+      "citation": {
+        "record_id": "ph-referral-fil-PH",
+        "source": "data/raw/business.json#/6/answers/fil-PH",
+        "version": "1.0",
+        "content_sha256": "14f4b33eabc4f590edb27f347f8e81d3753c56a7d3bf6eb940388809b083c0ce",
+        "score": 5.9391
+      },
+      "action": null
+    },
+    {
+      "speaker": "customer",
+      "start_s": 51.996,
+      "end_s": 53.844,
+      "text": "Gusto ko ng tao",
+      "reference": "Gusto ko ng tao",
+      "asr": "gusto ko nang tao.",
+      "asr_ms": 645.9846249781549
+    },
+    {
+      "speaker": "assistant",
+      "start_s": 54.144,
+      "end_s": 67.632,
+      "text": "Puwede po akong magtala ng mock request para sa adviser. Hindi pa kayang ikonekta kayo sa totoong tao sa demo. May pahintulot po ba kayo? Oo o hindi po.",
+      "state": "consent",
+      "citation": null,
+      "action": null
+    },
+    {
+      "speaker": "customer",
+      "start_s": 67.932,
+      "end_s": 68.868,
+      "text": "oo",
+      "reference": "oo",
+      "asr": "Oh!",
+      "asr_ms": 625.9572920389473
+    },
+    {
+      "speaker": "assistant",
+      "start_s": 69.168,
+      "end_s": 78.432,
+      "text": "Wala po akong verified na impormasyon tungkol diyan. Puwede tayong magtala ng mock request para sa tulong ng adviser.",
+      "state": "consent",
+      "citation": null,
+      "action": null
+    },
+    {
+      "speaker": "customer",
+      "start_s": 78.732,
+      "end_s": 83.148,
+      "text": "26 Setyembre alas dos ng hapon",
+      "reference": "26 Setyembre alas dos ng hapon",
+      "asr": "Ika dalawamput anim ng September alas dos ng hapon.",
+      "asr_ms": 2182.9009589273483
+    },
+    {
+      "speaker": "assistant",
+      "start_s": 83.448,
+      "end_s": 92.712,
+      "text": "Wala po akong verified na impormasyon tungkol diyan. Puwede tayong magtala ng mock request para sa tulong ng adviser.",
+      "state": "consent",
+      "citation": null,
+      "action": null
+    },
+    {
+      "speaker": "customer",
+      "start_s": 93.012,
+      "end_s": 93.948,
+      "text": "oo",
+      "reference": "oo",
+      "asr": "Oh!",
+      "asr_ms": 1196.6553749516606
+    },
+    {
+      "speaker": "assistant",
+      "start_s": 94.248,
+      "end_s": 103.512,
+      "text": "Wala po akong verified na impormasyon tungkol diyan. Puwede tayong magtala ng mock request para sa tulong ng adviser.",
+      "state": "consent",
+      "citation": null,
+      "action": null
+    }
+  ]
+}

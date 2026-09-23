@@ -2,11 +2,11 @@
 
 ## Implemented and locally checked
 
-The local web app loads; a typed voice-desk question returns a source-cited answer; a text coaching input displays the expected opportunity nudge; audio latency remains blank in text mode. The 27 automated checks, 14 retrieval cases, and 20 nudge fixtures pass on the development machine. These checks cover only the described test conditions.
+The local web app loads; a typed voice-desk question returns a source-cited answer; a text coaching input displays the expected opportunity nudge; audio latency remains blank in text mode. The 29 automated checks, 14 retrieval cases, and 20 nudge fixtures pass on the development machine. These checks cover only the described test conditions.
 
 ## Not yet validated or complete
 
-- **Required evidence:** no real call audio, two-sided recordings, native-speaker feedback, Indonesian regional-accent results, or walkthrough video is supplied yet. Provider-backed live ASR is implemented but has not been exercised with an account.
+- **Required evidence:** synthetic two-sided dialogues, a narrated walkthrough, real-time local-ASR replay, and human news-corpus accent results are included in [audio evidence](AUDIO_EVIDENCE.md). Human interactive calls and native-speaker feedback are still missing. The external paid provider adapter has not been exercised with an account.
 - **Business input:** all approved content and qualification rules are fictional. No employer-provided business script or website was available. Real documents may change both flow and retrieval behavior.
 - **Speech:** browser ASR exposes no stable provider/model identification. Installed TTS voices vary. Full multilingual word-number normalization, barge-in, full-duplex turn-taking, and automatic diarization are absent.
 - **Dialogue:** this is a narrow state machine and lexical answer selector. It handles demonstrated exact intent phrases, not arbitrary conversation. English number words below 100 are normalized; other spoken age formats may need digits. Corrections outside the age stage, compound intents, ambiguous callback dates, and negation deserve more coverage.
@@ -19,7 +19,7 @@ The local web app loads; a typed voice-desk question returns a source-cited answ
 ## Next steps in order
 
 1. Replace fictional material with approved business sources, resolve conflicting policy statements, and add adversarial/held-out retrieval cases.
-2. Run all planned recordings, native-speaker reviews, and regional-accent comparisons. Measure ASR errors on numbers and finance terms; tune dialogue from observed failures.
+2. Expand the included synthetic recordings and tiny corpus comparison with interactive human recordings and native-speaker reviews. Measure ASR errors on numbers and finance terms; tune dialogue from observed failures.
 3. Replace browser voice services with a controlled ASR/TTS stack and language-specific model/voice configuration. Add number normalization and safe repair questions before moving to richer generation.
 4. Use AudioWorklet or a streaming telephony bridge, contextual ASR across window boundaries, automatic channel attribution, and explicit backpressure/circuit breakers.
 5. Add durable session/action storage, idempotent real CRM delivery, authentication, audit history, secrets management, encryption, retention, access control, and consent records.

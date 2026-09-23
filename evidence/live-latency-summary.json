@@ -1,0 +1,46 @@
+{
+  "source": "live-replay.json",
+  "provider": "local",
+  "samples": 10,
+  "nudge_bearing_samples": 5,
+  "units": "milliseconds",
+  "latency": {
+    "capture_to_display_ms": {
+      "p50": 4911.400000095367,
+      "p95": 8727.400000095367,
+      "n": 10
+    },
+    "asr_ms": {
+      "p50": 877.3556249216199,
+      "p95": 4658.610166050494,
+      "n": 10
+    },
+    "signal_ms": {
+      "p50": 0.06229197606444359,
+      "p95": 2.672791015356779,
+      "n": 10
+    },
+    "llm_ms": {
+      "p50": 0,
+      "p95": 0,
+      "n": 10
+    },
+    "delivery_residual_ms": {
+      "p50": 16.615291131660342,
+      "p95": 58.1689169537276,
+      "n": 10
+    }
+  },
+  "nudge_bearing_capture_to_display": {
+    "p50": 4943,
+    "p95": 8727.400000095367,
+    "n": 5
+  },
+  "excluded_observations": {
+    "suppressed_audio": 0,
+    "dropped_audio": 0,
+    "audio_error": 0,
+    "text_only": 0
+  },
+  "notes": "LLM not used. Source observations must be checked against the live recording. This script verifies structure, not provenance. Silence/dropped/failed windows are excluded from successful-window percentiles."
+}
