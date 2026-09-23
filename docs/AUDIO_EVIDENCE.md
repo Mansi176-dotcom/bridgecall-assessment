@@ -17,7 +17,7 @@ Whisper base, CPU int8, beam size 1; gTTS 2.5.4 in English, Filipino (`tl`), or 
 | Q1-01-cooperative | [MP3](../evidence/audio/Q1-01-cooperative.mp3) | [JSON](../evidence/audio/Q1-01-cooperative.json) | pass — done |
 | Q1-02-objection | [MP3](../evidence/audio/Q1-02-objection.mp3) | [JSON](../evidence/audio/Q1-02-objection.json) | pass — done |
 | Q1-03-conflict | [MP3](../evidence/audio/Q1-03-conflict.mp3) | [JSON](../evidence/audio/Q1-03-conflict.json) | pass — closed |
-| Q3-PH-01-taglish | [MP3](../evidence/audio/Q3-PH-01-taglish.mp3) | [JSON](../evidence/audio/Q3-PH-01-taglish.json) | partial — permission |
+| Q3-PH-01-taglish | [MP3](https://raw.githubusercontent.com/Mansi176-dotcom/bridgecall-assessment/9d0dec45bb0fa57d9e1024808c6a2b936f2ca813/evidence/audio/Q3-PH-01-taglish.mp3) | [JSON](../evidence/audio/Q3-PH-01-taglish.json) | partial — permission |
 | Q3-PH-02-human | [MP3](../evidence/audio/Q3-PH-02-human.mp3) | [JSON](../evidence/audio/Q3-PH-02-human.json) | partial — consent |
 | Q3-ID-01-formal | [MP3](../evidence/audio/Q3-ID-01-formal.mp3) | [JSON](../evidence/audio/Q3-ID-01-formal.json) | partial — time |
 | Q3-ID-02-colloquial | [MP3](../evidence/audio/Q3-ID-02-colloquial.mp3) | [JSON](../evidence/audio/Q3-ID-02-colloquial.json) | partial — time |

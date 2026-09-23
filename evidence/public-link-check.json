@@ -1,0 +1,102 @@
+{
+  "method": "Unauthenticated HTTP HEAD, no cookies or Authorization header",
+  "results": [
+    {
+      "url": "https://github.com/Mansi176-dotcom/bridgecall-assessment",
+      "status": 200
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Mansi176-dotcom/bridgecall-assessment/main/evidence/video/walkthrough.mp4",
+      "status": 200
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Mansi176-dotcom/bridgecall-assessment/main/evidence/video/live-demo.mp4",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/Mansi176-dotcom/bridgecall-assessment/blob/main/evidence/live-latency-summary.json",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/Mansi176-dotcom/bridgecall-assessment/blob/main/docs/AUDIO_EVIDENCE.md",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/Mansi176-dotcom/bridgecall-assessment/blob/main/docs/SCREENSHOTS.md",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/Mansi176-dotcom/bridgecall-assessment/blob/main/docs/REVIEW_GUIDE.md",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/Mansi176-dotcom/bridgecall-assessment/blob/main/evidence/audio/Q1-01-cooperative.json",
+      "status": 200
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Mansi176-dotcom/bridgecall-assessment/main/evidence/audio/Q1-02-objection.mp3",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/Mansi176-dotcom/bridgecall-assessment/blob/main/evidence/audio/Q1-02-objection.json",
+      "status": 200
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Mansi176-dotcom/bridgecall-assessment/main/evidence/audio/Q1-03-conflict.mp3",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/Mansi176-dotcom/bridgecall-assessment/blob/main/evidence/audio/Q1-03-conflict.json",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/Mansi176-dotcom/bridgecall-assessment/blob/main/evidence/audio/Q3-PH-01-taglish.json",
+      "status": 200
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Mansi176-dotcom/bridgecall-assessment/main/evidence/audio/Q3-PH-02-human.mp3",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/Mansi176-dotcom/bridgecall-assessment/blob/main/evidence/audio/Q3-PH-02-human.json",
+      "status": 200
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Mansi176-dotcom/bridgecall-assessment/main/evidence/audio/Q3-ID-01-formal.mp3",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/Mansi176-dotcom/bridgecall-assessment/blob/main/evidence/audio/Q3-ID-01-formal.json",
+      "status": 200
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Mansi176-dotcom/bridgecall-assessment/main/evidence/audio/Q3-ID-02-colloquial.mp3",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/Mansi176-dotcom/bridgecall-assessment/blob/main/evidence/audio/Q3-ID-02-colloquial.json",
+      "status": 200
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Mansi176-dotcom/bridgecall-assessment/main/evidence/audio/Q1-01-cooperative.mp3",
+      "status": 200
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Mansi176-dotcom/bridgecall-assessment/main/SUBMISSION.md",
+      "status": 200
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Mansi176-dotcom/bridgecall-assessment/main/evidence/audio-after-fix/Q3-ID-01-formal.mp3",
+      "status": 200
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Mansi176-dotcom/bridgecall-assessment/main/evidence/audio-after-fix/Q3-ID-02-colloquial.mp3",
+      "status": 200
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Mansi176-dotcom/bridgecall-assessment/9d0dec45bb0fa57d9e1024808c6a2b936f2ca813/evidence/audio/Q3-PH-01-taglish.mp3",
+      "status": 200
+    }
+  ],
+  "notes": "One mutable raw PH audio URL timed out; the published manifest and report use a verified immutable commit URL instead."
+}
